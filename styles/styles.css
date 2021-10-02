@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/rubik/rubik-400.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/fonts/rubik/rubik-700.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 800;
+    src: url('/fonts/rubik/rubik-800.woff2') format('woff2');
+}
+
+
+/* Ralewy */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    src: url('/fonts/raleway/raleway-800.woff2') format('woff2');
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.page-header {
+    color: #000000;
+    background: #FFE17F;
+}
+
+.nav-list-user{
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation-list {
+    font-family: 'Raleway', sans-serif;
+    font-size: 21px;
+    color: #000000;
+    font-weight: 800;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.slick__item-number {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 180px;
+    line-height: 30px;
+    align-items: center;
+    text-align: right;
+}
+
+.slick__item>h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    color:#000000;
+}
+
+/* CATALOG */
+
+.catalog-device {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    align-items: center;
+    text-align: left;
+}
+
+
+/* DELIVERY */
+.blog {
+    background-color: #F0F0F0;
+}
+
+.blog>ul {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color:#000000;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.blog>h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    color:#000000;
+}
+
+.blog>p {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    color:#444444;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #444444;
+}

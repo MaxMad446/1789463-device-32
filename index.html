@@ -3,6 +3,8 @@
   <head>
     <meta charset='utf-8'>
     <title>HTML Academy: Девайс</title>
+
+    <link rel='stylesheet' href='styles/styles.css'>
   </head>
   <body>
 
@@ -11,20 +13,20 @@
     <header class='page-header'>
       <nav class='main-navigation'>
         <a class='navigation-logo' href='index.html'>
-          <img class='page-header-logo' alt='DEVICE' src=''>
+          <img class='page-header-logo' alt='DEVICE логотип' src='img/device_logo.svg' width='145' height='36px'>
         </a>
         <ul class='nav-list navigation-user'>
           <li>
-            <a href='#'>Поиск по сайту</a>
+            <a class='nav-list-user' href='#'>Поиск по сайту</a>
           </li>
           <li>
-            <a href='#'>Войти</a>
+            <a class='nav-list-user' href='#'>Войти</a>
           </li>
           <li>
-            <a href='#'>Сравнить</a>
+            <a class='nav-list-user' href='#'>Сравнить</a>
           </li>
           <li>
-            <a href='#'>Корзина</a>
+            <a class='nav-list-user' href='#'>Корзина</a>
           </li>
         </ul><!-- nav-list navigation-user end -->
 
@@ -57,9 +59,9 @@
         <h2 class='visually-hidden'>Товар</h2>
         <section class='product-device__slider'>
           <div class='slick__item'>
-            <p>01</p>
-            <img src='#' alt='квадрокоптер с лазером'>
-            <h2>Порхает как бабочка,жалит как пчела!</h2>
+            <p class='slick__item-number'>01</p>
+            <img class='slider-image' src='img/slider-1_quadcopter.jpg' alt='квадрокоптер с лазером' width='560' height='560'>
+            <h2>Порхает как бабочка, жалит как пчела!</h2>
             <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             <a href='#'>Подробнее</a>
             <article>
@@ -71,7 +73,7 @@
           </div>
 
           <div class='slick__item'>
-            <p>02</p>
+            <p class='slick__item-number'>02</p>
             <img src='#' alt='фитнес-браслет'>
             <h2>Худеем правильно!</h2>
             <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
@@ -81,7 +83,7 @@
           </div>
 
           <div class='slick__item'>
-            <p>03</p>
+            <p class='slick__item-number'>03</p>
             <img src='#' alt='селфи-палка'>
             <h2>Делай селфи, как Бен Стиллер!</h2>
             <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
@@ -101,34 +103,34 @@
         <h2 class='visually-hidden'>Каталог девайсов</h2>
         <ul class='catalog-device__list'>
           <li>
-            <img src='#' alt='виртуальная реальность'>
+            <img src='img/virt_real.svg' alt='виртуальная реальность'>
             <p class='catalog-device__description'>Виртуальная реальность</p>
           </li>
 
           <li>
-            <img src='#' alt='Моноподыдля селфи'>
+            <img src='img/monopod_selfi.svg' alt='Моноподыдля селфи'>
             <p class='catalog-device__description'>Моноподы
               для селфи</p>
           </li>
 
           <li>
-            <img src='#' alt='экшн-камеры'>
-            <p class='catalog-device__description'>экшн-камеры</p>
+            <img src='img/action_camera.svg' alt='экшн-камеры'>
+            <p class='catalog-device__description'>Экшн-камеры</p>
           </li>
 
           <li>
-            <img src='#' alt='фитнес-браслеты'>
-            <p class='catalog-device__description'>фитнес-браслеты</p>
+            <img src='img/fitness_bracelet.svg' alt='фитнес-браслеты'>
+            <p class='catalog-device__description'>Фитнес-браслеты</p>
           </li>
 
           <li>
-            <img src='#' alt='умные часы'>
-            <p class='catalog-device__description'>умные часы</p>
+            <img src='img/watch.svg' alt='умные часы'>
+            <p class='catalog-device__description'>Умные часы</p>
           </li>
 
           <li>
-            <img src='#' alt='квадрокоптеры'>
-            <p class='catalog-device__description'>квадрокоптеры</p>
+            <img src='img/quadcopter.svg' alt='квадрокоптеры'>
+            <p class='catalog-device__description'>Квадрокоптеры</p>
           </li>
         </ul>
       </section><!-- end catalog-device-->
@@ -143,13 +145,13 @@
         <p>Мы с удовольствием доставим ваш товар прямо
           к вашему подъезду совершенно бесплатно! Ведь
           мы неплохо заработаем, поднимая его на ваш этаж.</p>
-        <img src='#' alt='доставка'>
+        <img src='img/delivery2.svg' alt='доставка'>
 
       </section><!-- end blog-->
 
 
       <section class='info'>
-        <img src='#' alt='машина доставки'>
+        <img src='img/delevery_car.svg' alt='машина доставки'>
         <h3>Доставим редкий товар под заказ</h3>
 
         <h1>О нас</h1>
@@ -197,7 +199,7 @@
 
     <!-- FOOTER -->
     <footer>
-      <img class='logo' src='#' alt='DEVICE'>
+      <img class='footer-logo' src='img/device_footer.svg' alt='DEVICE логотип' width='145' height='36'>
       <P>Доставка</p>
       <p>Гарантия</p>
       <p>Контакты</p>
