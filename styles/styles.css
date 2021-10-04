@@ -88,6 +88,10 @@ body {
     text-align: left;
 }
 
+.catalog-product {
+    color: #000000;
+    background-color: #E5E5E5;
+}
 
 /* DELIVERY */
 .blog {
@@ -116,8 +120,27 @@ body {
     color:#444444;
 }
 
+/* SUBSRIPTION */
+
+.subsription {
+    background-color: #F0F0F0;
+}
+
 /* FOOTER */
 
 footer {
     background-color: #444444;
+    color: #ffffff;
+}
+
+.contacts-address>a {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.footer-social>a {
+    color: #FFC700;
 }
