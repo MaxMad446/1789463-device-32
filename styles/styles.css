@@ -161,6 +161,14 @@ body {
     display: flex;
 }
 
+.catalog-device-img {
+    margin: 70px 20px 33px;
+    width: 160px;
+    height: 160px;
+    background-color: #FFE17F;
+}
+
+
 .catalog-product {
     color: #000000;
     background-color: #E5E5E5;
@@ -168,10 +176,16 @@ body {
 
 /* DELIVERY */
 .blog {
+    display: flex;
     background-color: #F0F0F0;
 }
 
-.blog>ul {
+.blog_services {
+    padding-left: 140px;
+    width: 160px;
+    height: 20px;
+
+
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     color:#000000;
@@ -180,20 +194,56 @@ body {
     text-transform: uppercase;
 }
 
-.blog>h2 {
+.blog_services-description>h2 {
+    width: 560px;
+    height: 60px;
+    padding-left: 113px;
+    padding-bottom: 14px;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 50px;
     color:#000000;
 }
 
-.blog>p {
+.blog_services-description>p {
+    width: 497px;
+    height: 165px;
+    padding-left: 113px;
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     color:#444444;
 }
 
 /* SUBSRIPTION */
+
+.info-delevery {
+    display: flex;
+    width: 1160px;
+    height: 100px;
+    padding-left: 140px;
+    padding-top: 90px;
+}
+
+.info-delevery-car {
+    background-color: #FFE17F;
+    width: 125px;
+    height: 100px;
+}
+
+.info-delevery-img {
+    padding: 35px 39px;
+    width: 47px;
+    height: 31.1px;
+}
+
+.info-delevery-desc {
+    width: 1035px;
+    background-color: #F0F0F0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+}
 
 .subsription {
     background-color: #F0F0F0;
