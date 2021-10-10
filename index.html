@@ -12,9 +12,11 @@
 
     <header class='page-header'>
       <nav class='main-navigation'>
+
         <a class='navigation-logo' href='index.html'>
-          <img class='page-header-logo' alt='DEVICE логотип' src='img/device_logo.svg' width='145' height='36px'>
+          <img class='navigation-logo-header' alt='DEVICE логотип' src='img/device_logo.svg' width='145' height='36px'>
         </a>
+
         <ul class='nav-list navigation-user'>
           <li>
             <a class='nav-list-user' href='#'>Поиск по сайту</a>
@@ -32,19 +34,19 @@
 
         <ul class='navigation-list'>
           <li class='navigation-item'>
-            <a class='navigation-list' href='catalog.html'>Каталог товаров</a>
+            <a class='navigation-link' href='catalog.html'>Каталог товаров</a>
           </li>
 
           <li class='navigation-item'>
-            <a class='navigation-list' href='#'>Доставка</a>
+            <a class='navigation-link' href='#'>Доставка</a>
           </li>
 
           <li class='navigation-item'>
-            <a class='navigation-list' href='#'>Гарантия</a>
+            <a class='navigation-link' href='#'>Гарантия</a>
           </li>
 
           <li class='navigation-item'>
-            <a class='navigation-list' href='#'>Контакты</a>
+            <a class='navigation-link' href='#'>Контакты</a>
           </li>
         </ul><!-- navigation-list end-->
       </nav>
@@ -53,47 +55,62 @@
 
 
     <!-- MAIN -->
-    <main>
+    <main class='main-container main-index'>
 
     <section class='product-device'>
         <h2 class='visually-hidden'>Товар</h2>
         <section class='product-device__slider'>
           <div class='slick__item'>
-            <p class='slick__item-number'>01</p>
+
             <img class='slider-image' src='img/slider-1_quadcopter.jpg' alt='квадрокоптер с лазером' width='560' height='560'>
-            <h2>Порхает как бабочка, жалит как пчела!</h2>
-            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-            <a href='#'>Подробнее</a>
-            <article>
-              <p>800 м</p>
-              <p>50 м</p>
-              <p>Дальность полета</p>
-              <p>Радиус поражения</p>
-            </article>
+            <div class='slick__item-product'>
+              <p class='slick__item-number'>01</p>
+              <h2>Порхает как бабочка, жалит как пчела!</h2>
+              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+              <a href='#'>Подробнее</a>
+              <div class='slick__item-description'>
+                <article>
+                  <p>800 м</p>
+                  <p>Дальность полета</p>
+                </article>
+              </div>
+              <div class='slick__item-description'>
+                <article>
+                  <p>50 м</p>
+                  <p>Радиус поражения</p>
+                </article>
+              </div>
+            </div>
           </div>
 
           <div class='slick__item'>
-            <p class='slick__item-number'>02</p>
+
             <img src='img/fitness_bracelet_slider2.jpg' alt='фитнес-браслет'>
-            <h2>Худеем правильно!</h2>
-            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-            <a href='#'>Подробнее</a>
-            <p>48 часов</p>
-            <p>Без подзарядки</p>
+            <div class='slick__item-product'>
+              <p class='slick__item-number'>02</p>
+              <h2>Худеем правильно!</h2>
+              <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              <a href='#'>Подробнее</a>
+              <p>48 часов</p>
+              <p>Без подзарядки</p>
+            </div>
           </div>
 
           <div class='slick__item'>
-            <p class='slick__item-number'>03</p>
+
             <img src='img/selfi_slider3.jpg' alt='селфи-палка'>
-            <h2>Делай селфи, как Бен Стиллер!</h2>
-            <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-            <a href='#'>Подробнее</a>
-            <p>8,5 м</p>
-            <p>5 кг</p>
-            <p>Карбон</p>
-            <p>длина палки</p>
-            <p>вес палки</p>
-            <p>Материал</p>
+            <div class='slick__item-product'>
+              <p class='slick__item-number'>03</p>
+              <h2>Делай селфи, как Бен Стиллер!</h2>
+              <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+              <a href='#'>Подробнее</a>
+              <p>8,5 м</p>
+              <p>5 кг</p>
+              <p>Карбон</p>
+              <p>длина палки</p>
+              <p>вес палки</p>
+              <p>Материал</p>
+            </div>
           </div>
 
         </section><!-- end product-device__slider-->
