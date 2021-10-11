@@ -2,7 +2,7 @@
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
-    src: url('/fonts/rubik/rubik-400.woff2') format('woff2');
+    src: url('fonts/rubik/rubik-400.woff2') format('woff2');
     font-display: swap;
 }
 
@@ -10,14 +10,14 @@
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 700;
-    src: url('/fonts/rubik/rubik-700.woff2') format('woff2');
+    src: url('fonts/rubik/rubik-700.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 800;
-    src: url('/fonts/rubik/rubik-800.woff2') format('woff2');
+    src: url('fonts/rubik/rubik-800.woff2') format('woff2');
 }
 
 
@@ -26,7 +26,7 @@
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 800;
-    src: url('/fonts/raleway/raleway-800.woff2') format('woff2');
+    src: url('fonts/raleway/raleway-800.woff2') format('woff2');
 }
 
 html {
@@ -157,7 +157,74 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+.inner-header {
+    width: 1070px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inner-header-title {
+    width: 700px;
+    height: 60px;
+    padding-bottom: 14px;
+
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.breadcrumbs {
+    display: flex;
+
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #000000;
+    opacity: 0.6;
+}
+
+.breadcrumbs-item {
+    margin-right: 36px;
+    margin-bottom: 49px;
+}
+
 /* CATALOG */
+.filter-sort {
+    display: flex;
+    background-color: #DCDCDC;
+    height: 70px;
+}
+
+.filter-sort-text {
+    margin: 25px 32px 25px 200px;
+}
+
+.filter-sort-text p{
+    width: 236px;
+    height: 20px;
+}
+
+.filter-sort-sorting {
+    width: 972px;
+    height: 70px;
+    margin-left: 72px;
+    background-color:#EBEBEB;
+}
+
+.catalog-product-filter {
+    display: flex;
+}
+
+.product-all {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 
 .catalog-device {
