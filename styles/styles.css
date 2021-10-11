@@ -31,9 +31,11 @@
 
 html {
     height: 100%;
+
 }
 
 body {
+    max-width: 1440px;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -46,17 +48,13 @@ body {
     background-color: #FFFFFF;
 }
 
-
-.main-container {
-    flex-grow: 1;
-}
-
 .page-header {
     color: #000000;
     background: #FFE17F;
     margin-top: 40px;
-    margin-left: 100px;
-    margin-right: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
     width: 1160px;
 }
 
@@ -116,6 +114,18 @@ body {
     text-transform: uppercase;
 }
 
+/* MAIN */
+
+.main-container {
+    flex-grow: 1;
+}
+
+.product-device {
+    width: 1160px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .slick__item {
     display: flex;
 }
@@ -149,12 +159,16 @@ body {
 }
 /* CATALOG */
 
+
 .catalog-device {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
     align-items: center;
     text-align: left;
+    width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .catalog-device__list {
@@ -162,12 +176,29 @@ body {
 }
 
 .catalog-device-img {
-    margin: 70px 20px 33px;
+    margin: 40px 20px 33px;
     width: 160px;
     height: 160px;
     background-color: #FFE17F;
 }
 
+.catalog-device-img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.catalog-device__description {
+    width: 160px;
+    height: 60px;
+    margin: 20px;
+
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+}
 
 .catalog-product {
     color: #000000;
@@ -176,6 +207,9 @@ body {
 
 /* DELIVERY */
 .blog {
+    margin-top: 149px;
+    max-width: 1440px;
+    width: 1440px;
     display: flex;
     background-color: #F0F0F0;
 }
@@ -184,7 +218,6 @@ body {
     padding-left: 140px;
     width: 160px;
     height: 20px;
-
 
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -205,7 +238,7 @@ body {
     color:#000000;
 }
 
-.blog_services-description>p {
+.blog_services-description p {
     width: 497px;
     height: 165px;
     padding-left: 113px;
@@ -216,13 +249,25 @@ body {
 
 /* SUBSRIPTION */
 
+.info {
+    width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-container {
+    display: flex;
+    width: 1160px;
+}
+
+
 .info-delevery {
     display: flex;
     width: 1160px;
     height: 100px;
-    padding-left: 140px;
     padding-top: 90px;
 }
+
 
 .info-delevery-car {
     background-color: #FFE17F;
@@ -245,18 +290,93 @@ body {
     text-align: center;
 }
 
-.subsription {
+/* SUBSCRIPTION */
+
+.subsсription {
     background-color: #F0F0F0;
+}
+
+.subsсription-about {
+    display: flex;
+}
+
+.subscription-head {
+    width: 560px;
+    height: 120px;
+    padding: 70px 40px 20px 140px;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.subscription-text {
+    width: 560px;
+    height: 99px;
+
+    padding: 86px 140px 20px 0;
+}
+
+.subscription-email {
+    padding: 20px 140px 134px;
+    display: flex;
 }
 
 /* FOOTER */
 
 footer {
+    max-width:  1440px;
+    max-height: 321px;
+    height: 321px;
+    padding-top: 62px;
+    padding-left: 138px;
     background-color: #444444;
     color: #ffffff;
 }
 
-.contacts-address>a {
+.footer-container {
+    display: flex;
+}
+
+.contacts-address {
+    width: 238px;
+    height: 38px;
+    margin-top: 35px;
+    margin-right: 114px;
+    display: flex;
+
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.footer-sub {
+    display: flex;
+    width: 450px;
+    height: 20px;
+    margin-top: 39px;
+
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.footer-sub p {
+    padding: 0 10px;
+}
+
+.contacts-smart {
+    width: 239px;
+    height: 37px;
+    margin-top: 39px;
+
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -264,7 +384,11 @@ footer {
     color: #ffffff;
 }
 
-.footer-social>a {
+.htmlacademy-link {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 140px;
+    margin-top: 57px;
     color: #FFC700;
 }
 
