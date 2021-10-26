@@ -58,7 +58,7 @@
     <main class='main-container main-index'>
 
     <section class='slider-container'>
-        
+      <h2 class='visually-hidden'>Слайдер товаров</h2>
           <div class='slider slider-1'>
             <div class='slider-img'>
               <img class='slider-img1' src='img/slider-1.png' alt='квадрокоптер с лазером' width='560' height='560'>
@@ -73,7 +73,7 @@
               <p class='slider__item-text'>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
               
               <div>
-                <a class='slider__item-link' href='#'>Подробнее</a>
+                <button class='slider__item-link'>Подробнее</button>
               </div>
               
 
@@ -104,7 +104,7 @@
               <p class='slider__item-text'>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
               
               <div>
-                <a class='slick__item-link' href='#'>Подробнее</a>
+                <button class='slider__item-link'>Подробнее</button>
               </div>
 
               <div class='slider__item-atributes'>
@@ -131,7 +131,7 @@
               <p class='slider__item-text'>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
              
               <div>
-                <a class='slider__item-link' href='#'>Подробнее</a>
+                <button class='slider__item-link'>Подробнее</button>
               </div>
 
               <div class='slider__item-atributes'>
@@ -158,46 +158,46 @@
         <ul class='catalog-device__list'>
 
           <li>
-            <div class='catalog-device-img'>
+            <a href='catalog.html' class='catalog-device-img'>
               <img src='img/virt_real.svg' alt='виртуальная реальность'>
-            </div>
-            <p class='catalog-device__description'>Виртуальная реальность</p>
+            </a>
+            <a href='catalog.html' class='catalog-device__description'>Виртуальная реальность</a>
           </li>
 
           <li>
-            <div class='catalog-device-img'>
+            <a href='catalog.html' class='catalog-device-img'>
               <img src='img/monopod_selfi.svg' alt='Моноподыдля селфи'>
-            </div>
-            <p class='catalog-device__description'>Моноподы
-              для селфи</p>
+            </a>
+            <a href='catalog.html' class='catalog-device__description'>Моноподы<br>
+              для селфи</a>
           </li>
 
           <li>
-            <div class='catalog-device-img'>
+            <a href='catalog.html' class='catalog-device-img'>
               <img src='img/action_camera.svg' alt='экшн-камеры'>
-            </div>
-            <p class='catalog-device__description'>Экшн-камеры</p>
+            </a>
+            <a href='catalog.html' class='catalog-device__description'>Экшн-камеры</a>
           </li>
 
           <li>
-            <div class='catalog-device-img'>
+            <a href='catalog.html' class='catalog-device-img'>
               <img src='img/fitness_bracelet.svg' alt='фитнес-браслеты'>
-            </div>
-            <p class='catalog-device__description'>Фитнес-браслеты</p>
+            </a>
+            <a href='catalog.html' class='catalog-device__description'>Фитнес-браслеты</a>
           </li>
 
           <li>
-            <div class='catalog-device-img'>
+            <a href='catalog.html' class='catalog-device-img'>
               <img src='img/watch.svg' alt='умные часы'>
-            </div>
-            <p class='catalog-device__description'>Умные часы</p>
+            </a>
+            <a href='catalog.html' class='catalog-device__description'>Умные часы</a>
           </li>
 
           <li>
-            <div class='catalog-device-img'>
+            <a href='catalog.html' class='catalog-device-img'>
               <img src='img/quadcopter.svg' alt='квадрокоптеры'>
-            </div>
-            <p class='catalog-device__description'>Квадрокоптеры</p>
+            </a>
+            <a href='catalog.html' class='catalog-device__description'>Квадрокоптеры</a>
           </li>
         </ul>
       </section><!-- end catalog-device-->
@@ -208,12 +208,17 @@
       <div class='blog-container'>
         <div class='blog'>
           <section class='blog_slider'>
+            <h2 class='visually-hidden'>Блок слайдер</h2>
+            <input class='blog-slider-input' type='radio' name='button' checked id='blog-slider-delivery'>
             <label class='blog-slider-label' for='blog-slider-delivery'>Доставка</label>
+            <input class='blog-slider-input' type='radio' name='button' id='blog-slider-garanty'>
             <label class='blog-slider-label' for='blog-slider-garanty'>Гарантия</label>
+            <input class='blog-slider-input' type='radio' name='button' id='blog-slider-credit'>
             <label class='blog-slider-label' for='blog-slider-credit'>Кредит</label>
           </section>
 
           <section class='right-side right-side1'>
+            <h2 class='visually-hidden'>Правая сторона</h2>
             <div class='right-side-info'>
               <h2 class='right-side-title'>Доставка</h2>
               <p class='right-side-text'>Мы с удовольствием доставим ваш товар прямо
@@ -221,10 +226,11 @@
                 мы неплохо заработаем, поднимая его на ваш этаж.
               </p>
             </div>
-            <img class='right-side-img' src='img/delivery2.svg' alt='курьер' width='136px' height='164px'>
+            <img class='right-side-img' src='img/delivery2.svg' alt='курьер' width='136' height='164'>
           </section>
 
           <section class='right-side right-side2 visually-hidden' id='right-side2'>
+            <h2 class='visually-hidden'>Правая сторона2</h2>
             <h2 class='right-side-title'>Гарантия</h2>
             <p class='right-side-text'>
               Если из-за возгорания купленного у нас товара у вас сгорит дом — 
@@ -235,6 +241,7 @@
           </section>
 
           <section class='right-side right-side3 visually-hidden' id='right-side3'>
+            <h2 class='visually-hidden'>Правая сторона3</h2>
             <h2 class='right-side-title'>Кредит</h2>
             <p class='right-side-text'>
               Залезть в долговую яму стало проще! Кредитные консультанты 
@@ -248,14 +255,16 @@
       </div><!-- end blog-container-->
 
       <section class='info'>
-
+        <h2 class='visually-hidden'>Информация</h2>
           <div class='info-delevery'>
             <div class='info-delevery-car'>
               <img class='info-delevery-img' src='img/delevery_car.svg' alt='машина доставки'>
             </div>
             <div class='info-delevery-desc'>
               <p class='info-delevery-text'>Доставим редкий товар под заказ</p>
+              <div><img class='info-delevery-icon' src='img/Инфо.svg' alt='информация'></div>
             </div>
+            
           </div>
 
           <div class='info-container'>
@@ -274,7 +283,7 @@
                   <li><a>ТоксБерри</a></li>
                 </ul>
 
-                <a class='info-about-button' href='#'>Подробнее о нас</a>
+                <button class='info-about-button'>Подробнее о нас</button>
               </div>
             </div>
 
@@ -298,7 +307,7 @@
                   <li class='contacts-schedule-item'>пн—пт: с 10:00 до 22:00</li>
                   <li class='contacts-schedule-item'>сб—вс: с 10:00 до 19:00</li>
                 </ul>
-                <a class='button button-feedback' href='#'>Напишите нам</a>
+                <button class='button button-feedback'>Напишите нам</button>
               </div>
             </div>
 
@@ -311,11 +320,12 @@
       <!-- SUBSCRIPTION -->
 
       <section class='subsсription'>
+        <h2 class='visually-hidden'>Пидписаться</h2>
         <div class='subscription-container'>
           <div class='subsсription-about'>
             <div class='subscription-head'>
               <h2>
-                Подпишитесь на рассылку
+                Подпишитесь<br> на рассылку
               </h2>
             </div>
 
@@ -331,6 +341,7 @@
               <input class='subscription-input' type='email'  placeholder='Ваш e-mail'>
               <button class='subscription-button' type='submit'>Подписаться</button>
             </form>
+            <img class='subscription-tick-big' src='img/tick-big.svg' alt='зеленая галочка' width='14' height='14'>
             <p class='subscription-free'>Это бесплатно</p>
           </div>
 
@@ -371,6 +382,7 @@
         <div class='footer-column3'>
           <div class='footer-line'></div>
           <section class='footer-social'>
+            <h2 class='visually-hidden'>Социальные сети</h2>
             <ul class='footer-social-list'>
               <li class='footer-social-item'>
                 <a class='button' href='#'>

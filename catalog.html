@@ -66,10 +66,10 @@
                       <a class='breadcrumbs-link' href='index.html'>Главная</a>
                   </li>
                   <li class='breadcrumbs-item'>
-                      <a class='breadcrumbs-link' href="#">Каталог товаров</a>
+                      <a class='breadcrumbs-link' href='catalog.html'>Каталог товаров</a>
                   </li>
                   <li class='breadcrumbs-item'>
-                      <a class='breadcrumbs-link' href="#">Моноподы для селфи</a>
+                      <a class='breadcrumbs-link' href='catalog.html'>Моноподы для селфи</a>
                   </li>
               </ul>
             </div>
@@ -84,7 +84,7 @@
 
               <div class='sorting-container'>
                 <p>Сортировка:</p>
-                <form class='sorting-form'>
+                <form class='sorting-form' action='https://echo.htmlacademy.ru/' method='POST'>
                   <select class='select-control' id='sorting' name='sorting'>
                       <option value='popular'>Сначала популярное</option>
                       <option value='cheap'>Сначала дешевое</option>
@@ -95,13 +95,7 @@
                   </button>
                 </form>
 
-                <a href='#' class='button button-light'>
-                    <span class='visually-hidden'>Стрелка вверх</span>
-                </a>
-
-                <a href='#' class='button'>
-                    <span class='visually-hidden'>Стрелка вниз</span>
-                </a>
+               
 
               </div>
             </div>
@@ -202,42 +196,52 @@
                 <ul class='product-list'>
                     <li class='product-card'>
                         <a class='product-card-link' href='product.html'>
-                            <img class='product-card-image' src='img/catalog_selfi.jpg' alt='Любительская селфи-палка'>
-                            <h4 class='product-card-title'>Любительская селфи-палка</h4>
+                            <img class='product-card-image' src='img/catalog_selfi.jpg' alt='Любительская селфи-палка'> 
                         </a>
-                        <b class='product-card-price'>500 ₽</b>
+                        <div class='product-text'>
+                          <h4 class='product-card-title'>Любительская селфи-палка</h4>
+                          <p class='product-card-price'>500 ₽</p>
+                        </div>
                     </li>
                     <li class='product-card'>
                         <a class='product-card-link' href='product.html'>
                             <img class='product-card-image' src='img/catalog_prof-selfi.jpg' alt='Профессиональная селфи-палка'>
-                            <h4 class='product-card-title'>Профессиональная селфи-палка</h4>
                         </a>
-                        <b class='product-card-price'>1 500 ₽</b>
-                    </li> <li class='product-card'>
+                        <div class='product-text'>
+                          <h4 class='product-card-title'>Профессиональная селфи-палка</h4>
+                          <p class='product-card-price'>1 500 ₽</p>
+                        </div>
+                    </li> 
+                    <li class='product-card'>
                         <a class='product-card-link' href='product.html'>
                             <img class='product-card-image' src='img/catalog_super-selfi.jpg' alt='Непотопляемая селфи-палка'>
-                            <h4 class='product-card-title'>Непотопляемая селфи-палка</h4>
                         </a>
-                        <b class='product-card-price'>2 500 ₽</b>
-                    </li> <li class='product-card'>
+                        <div class='product-text'>
+                          <h4 class='product-card-title'>Непотопляемая селфи-палка</h4>
+                         <p class='product-card-price'>2 500 ₽</p> 
+                        </div>
+                    </li> 
+                    <li class='product-card'>
                         <a class='product-card-link' href='product.html'>
                             <img class='product-card-image' src='img/catalog_selfi-arm.jpg' alt='Селфи-палка «Следуй за мной»'>
-                            <h4 class='product-card-title'>Селфи-палка «Следуй за мной»</h4>
                         </a>
-                        <b class='product-card-price'>4 900 ₽</b>
+                        <div class='product-text'>
+                          <h4 class='product-card-title'>Селфи-палка «Следуй за мной»</h4>
+                          <p class='product-card-price'>4 900 ₽</p>
+                        </div>
                     </li>
                 </ul>
 
-                
-                <div class='pagination-container'>
+                <div>   
                   <button class='button pagination-show-more' type='button'>Загрузить ещё</button>
-
-                  <ul class='pagination'>
-                      <li class='pagination-item'>
-                        <a class='pagination-link pagination-prev pagination-disabled'>
-                          <span class='pagination_btn'>Назад</span>
-                        </a>
-                      </li>
+                </div>
+                  
+                <div class='pagination-container'>
+                  <div class='pagination'>
+                    <a class='pagination-prev pagination-disabled'>
+                      <span class='pagination_btn'>Назад</span>
+                    </a>
+                    <ul class='pagination-list'>
                       <li class='pagination-item'>
                         <a class='pagination-link pagination-current'>1</a>
                       </li>
@@ -248,19 +252,18 @@
                         <a class='pagination-link' href='#'>3</a>
                       </li>
                       <li class='pagination-item'>
-                        <a class='pagination-link' href='#'>4</a>
+                        <a class='pagination-link' href='#'>...</a>
                       </li>
                       <li class='pagination-item'>
-                        <a class='pagination-link' href='#'>5</a>
+                        <a class='pagination-link' href='#'>15</a>
                       </li>
-                      <li class='pagination-item'>
-                        <a class='pagination-link pagination-next' href='#'>
-                          <span class='pagination_btn'>Вперед</span>
-                        </a>
-                      </li>
-                  </ul>
-                  
+                    </ul>
+                      <a class='pagination-next' href='#'>
+                        <span class='pagination_btn'>Вперед</span>
+                      </a>
+                  </div>
                 </div>
+
               </div>
             </div>
         
@@ -299,6 +302,7 @@
           <div class='footer-column3'>
             <div class='footer-line'></div>
             <section class='footer-social'>
+              <h2 class='visually-hidden'>Социальные сети</h2>
               <ul class='footer-social-list'>
                 <li class='footer-social-item'>
                   <a class='button' href='#'>
