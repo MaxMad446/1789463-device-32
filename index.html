@@ -19,22 +19,23 @@
 
         <ul class='nav-list navigation-user'>
           <li>
-            <a class='nav-list-user' href='#'>Поиск по сайту</a>
+            <a class='nav-list-user' href='#'><img class='nav-list-img' src='img/search.svg' alt='поиск'>Поиск по сайту</a>
           </li>
           <li>
-            <a class='nav-list-user' href='#'>Войти</a>
+            <a class='nav-list-user' href='#'><img class='nav-list-img' src='img/user.svg' alt='логин' width='13' height='12'>Войти</a>
           </li>
           <li>
-            <a class='nav-list-user' href='#'>Сравнить</a>
+            <a class='nav-list-user' href='#'><img class='nav-list-img' src='img/compare.svg' alt='сравнить' width='10' height='12'>Сравнить</a>
           </li>
           <li>
-            <a class='nav-list-user' href='#'>Корзина</a>
+            <a class='nav-list-user' href='#'><img class='nav-list-img' src='img/cart.svg' alt='корзина' width='16' height='14'>Корзина</a>
           </li>
         </ul><!-- nav-list navigation-user end -->
 
         <ul class='navigation-list'>
-          <li class='navigation-item'>
+          <li class='navigation-item nav-first'>
             <a class='navigation-link' href='catalog.html'>Каталог товаров</a>
+            <a href='catalog.html'><img class='nav-plus' src='img/plus.svg' alt='плюс' width='16' height='16'></a>
           </li>
 
           <li class='navigation-item'>
@@ -61,16 +62,18 @@
       <h2 class='visually-hidden'>Слайдер товаров</h2>
           <div class='slider slider-1'>
             <div class='slider-img'>
+              <img class='slider-arrow-left' src='img/slider_arrow_left.svg' alt='стрелка левая' width='20' height='60'>
               <img class='slider-img1' src='img/slider-1.png' alt='квадрокоптер с лазером' width='560' height='560'>
+              <img class='slider-arrow-right' src='img/slider_arrow_right.svg' alt='стрелка правая' width='20' height='60'>
             </div>
 
             <div class='slider__item'>
               <div class='slider__item-number'>
-                <img src='img/01.png' alt='цифра1' width='200' height='130'>
+                <img src='img/01.png' alt='цифра1' width='200' height='125'>
               </div>
 
               <h2 class='slider-item-title'>Порхает как бабочка,<br> жалит как пчела!</h2>
-              <p class='slider__item-text'>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+              <p class='slider__item-text'>Этот обычный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером, замаскированным под стандартную камеру.</p>
               
               <div>
                 <button class='slider__item-link'>Подробнее</button>
@@ -157,14 +160,14 @@
         <h2 class='visually-hidden'>Каталог девайсов</h2>
         <ul class='catalog-device__list'>
 
-          <li>
+          <li class='catalog-device-element'>
             <a href='catalog.html' class='catalog-device-img'>
               <img src='img/virt_real.svg' alt='виртуальная реальность'>
             </a>
-            <a href='catalog.html' class='catalog-device__description'>Виртуальная реальность</a>
+            <a href='catalog.html' class='catalog-device__description'>Виртуальная<br> реальность</a>
           </li>
 
-          <li>
+          <li class='catalog-device-element'>
             <a href='catalog.html' class='catalog-device-img'>
               <img src='img/monopod_selfi.svg' alt='Моноподыдля селфи'>
             </a>
@@ -172,28 +175,28 @@
               для селфи</a>
           </li>
 
-          <li>
+          <li class='catalog-device-element'>
             <a href='catalog.html' class='catalog-device-img'>
               <img src='img/action_camera.svg' alt='экшн-камеры'>
             </a>
             <a href='catalog.html' class='catalog-device__description'>Экшн-камеры</a>
           </li>
 
-          <li>
+          <li class='catalog-device-element'>
             <a href='catalog.html' class='catalog-device-img'>
               <img src='img/fitness_bracelet.svg' alt='фитнес-браслеты'>
             </a>
             <a href='catalog.html' class='catalog-device__description'>Фитнес-браслеты</a>
           </li>
 
-          <li>
+          <li class='catalog-device-element'>
             <a href='catalog.html' class='catalog-device-img'>
               <img src='img/watch.svg' alt='умные часы'>
             </a>
             <a href='catalog.html' class='catalog-device__description'>Умные часы</a>
           </li>
 
-          <li>
+          <li class='catalog-device-element'>
             <a href='catalog.html' class='catalog-device-img'>
               <img src='img/quadcopter.svg' alt='квадрокоптеры'>
             </a>
@@ -262,9 +265,8 @@
             </div>
             <div class='info-delevery-desc'>
               <p class='info-delevery-text'>Доставим редкий товар под заказ</p>
-              <div><img class='info-delevery-icon' src='img/Инфо.svg' alt='информация'></div>
+              <img class='info-delevery-icon' src='img/Инфо.svg' alt='информация'>
             </div>
-            
           </div>
 
           <div class='info-container'>
@@ -337,7 +339,7 @@
           </div>
 
           <div class='subscription-email'>
-            <form class='subscription-form' action='https://echo.htmlacademy.ru/.' method='POST'>
+            <form class='subscription-form' action='https://echo.htmlacademy.ru/' method='POST'>
               <input class='subscription-input' type='email'  placeholder='Ваш e-mail'>
               <button class='subscription-button' type='submit'>Подписаться</button>
             </form>
@@ -359,7 +361,7 @@
 
         <div class='footer-column1'>
           <div>
-            <img class='footer-logo' src='img/device_footer.svg' alt='DEVICE логотип' width='145' height='36'>
+            <a href='#'><img class='footer-logo' src='img/device_footer.svg' alt='DEVICE логотип' width='145' height='36'></a>
           </div>
         </div>
 
@@ -368,14 +370,14 @@
             <p class='footer-address-text'>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
           </address>
 
-          <div class='footer-menu'>
-            <p class='footer-menu-el'>Доставка</p>
-            <p class='footer-menu-el'>Гарантия</p>
-            <p class='footer-menu-el'>Контакты</p>
-          </div>
+          <ul class='footer-menu'>
+            <li class='footer-menu-el'><a href='blank.html'>Доставка</a></li>
+            <li class='footer-menu-el'><a href='blank.html'>Гарантия</a></li>
+            <li class='footer-menu-el'><a href='blank.html'>Контакты</a></li>
+          </ul>
 
           <div class='footer-tel'>
-            <a class='footer-tel-el' href='tel:78128121212'>+7 (812) 812-12-12</a>
+            <a class='footer-tel-el' href='tel:78128121212'>Тел.: +7 (812) 812-12-12</a>
           </div>
         </div>
 
@@ -404,7 +406,8 @@
               </li>
             </ul>
           </section>
-          <a class='htmlacademy-link' href='https://htmlacademy.ru/'><img src='img/htmlacademy.svg' alt='htmlacademy'></a>
+          <a class='htmlacademy-link' href='https://htmlacademy.ru/'><img class='htmlacademy-icon' src='img/htmlacademy.svg' aria-hidden='true' alt='htmlacademy' width='115' height='34'>
+          </a>
         </div>
      
       </div>
