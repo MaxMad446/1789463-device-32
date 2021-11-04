@@ -18,9 +18,15 @@
         </a>
 
         <ul class='nav-list navigation-user'>
-          <li>
-            <a class='nav-list-user' href='#'><img class='nav-list-img' src='img/search.svg' alt='поиск'>Поиск по сайту</a>
-          </li>
+          <div class='seach-form-container' tabindex='0'>
+            <form class='seach-form' action='https://echo.htmlacademy.ru/' method='post'>
+              <img class='seach-img' src='img/search.svg' alt='логин' width='16' height='16'>
+              <input type='text' id='seach-form' class='seach-form-input' name='seach-form-input' autocomplete='off' placeholder='Поиск по сайту'>
+              <label for='seach-form'></label>
+              <button class='seach-form-button'>Найти</button>
+              <div class='seach-form-line'></div>
+            </form>
+          </div>
           <li>
             <a class='nav-list-user' href='#'><img class='nav-list-img' src='img/user.svg' alt='логин' width='13' height='12'>Войти</a>
           </li>
@@ -34,8 +40,22 @@
 
         <ul class='navigation-list'>
           <li class='navigation-item nav-first'>
-            <a class='navigation-link' href='catalog.html'>Каталог товаров</a>
+            <a class='navigation-link-catalog' href='catalog.html'>Каталог товаров</a>
             <a href='catalog.html'><img class='nav-plus' src='img/plus.svg' alt='плюс' width='16' height='16'></a>
+            <div class='subcatalog'>
+              <ul class='subcatalog-list'>
+                <li><a href='catalog.html'>Виртуальная реальность</a></li>
+                <li><a href='catalog.html'>Моноподы для селфи</a></li>
+                <li><a href='catalog.html'>Экшн-камеры</a></li>
+              </ul>
+              <ul class='subcatalog-list'>
+                <li><a href='catalog.html'>Фитнес-браслеты</a></li>
+                <li><a href='catalog.html'>Умные часы</a></li>
+              </ul>
+              <ul class='subcatalog-list'>
+                <li><a href='catalog.html'>Квадрокоптеры</a></li>
+              </ul>
+            </div>
           </li>
 
           <li class='navigation-item'>
@@ -62,9 +82,9 @@
       <h2 class='visually-hidden'>Слайдер товаров</h2>
           <div class='slider slider-1'>
             <div class='slider-img'>
-              <img class='slider-arrow-left' src='img/slider_arrow_left.svg' alt='стрелка левая' width='20' height='60'>
+              <img class='slider-arrow-left' src='img/slider_arrow_left.svg' alt='стрелка левая' tabindex='0' width='20' height='60'>
               <img class='slider-img1' src='img/slider-1.png' alt='квадрокоптер с лазером' width='560' height='560'>
-              <img class='slider-arrow-right' src='img/slider_arrow_right.svg' alt='стрелка правая' width='20' height='60'>
+              <img class='slider-arrow-right' src='img/slider_arrow_right.svg' alt='стрелка правая' tabindex='0' width='20' height='60'>
             </div>
 
             <div class='slider__item'>
@@ -153,6 +173,16 @@
               </div>
             </div>
           </div>
+
+          <div class='slider-main-radio'>
+            <input class='slider-main-input' type='radio' name='slider-main-input' checked>
+            <label class='slider-main-label' for='slider-main-radio1'></label>
+            <input class='slider-main-input' type='radio' name='slider-main-input'>
+            <label class='slider-main-label' for='slider-main-radio2'></label>
+            <input class='slider-main-input' type='radio' name='slider-main-input'>
+            <label class='slider-main-label' for='slider-main-radio3'></label>
+        </div>
+          
     </section><!-- end slider-container -->
 
     
@@ -164,15 +194,14 @@
             <a href='catalog.html' class='catalog-device-img'>
               <img src='img/virt_real.svg' alt='виртуальная реальность'>
             </a>
-            <a href='catalog.html' class='catalog-device__description'>Виртуальная<br> реальность</a>
+            <a href='catalog.html' class='catalog-device__description'>Виртуальная<br>реальность</a>
           </li>
 
           <li class='catalog-device-element'>
             <a href='catalog.html' class='catalog-device-img'>
               <img src='img/monopod_selfi.svg' alt='Моноподыдля селфи'>
             </a>
-            <a href='catalog.html' class='catalog-device__description'>Моноподы<br>
-              для селфи</a>
+            <a href='catalog.html' class='catalog-device__description'>Моноподы<br>для селфи</a>
           </li>
 
           <li class='catalog-device-element'>
@@ -213,19 +242,19 @@
           <section class='blog_slider'>
             <h2 class='visually-hidden'>Блок слайдер</h2>
             <input class='blog-slider-input' type='radio' name='button' checked id='blog-slider-delivery'>
-            <label class='blog-slider-label' for='blog-slider-delivery'>Доставка</label>
+            <label class='blog-slider-label' for='blog-slider-delivery' tabindex='0'>Доставка</label>
             <input class='blog-slider-input' type='radio' name='button' id='blog-slider-garanty'>
-            <label class='blog-slider-label' for='blog-slider-garanty'>Гарантия</label>
+            <label class='blog-slider-label' for='blog-slider-garanty' tabindex='0'>Гарантия</label>
             <input class='blog-slider-input' type='radio' name='button' id='blog-slider-credit'>
-            <label class='blog-slider-label' for='blog-slider-credit'>Кредит</label>
+            <label class='blog-slider-label' for='blog-slider-credit' tabindex='0'>Кредит</label>
           </section>
 
           <section class='right-side right-side1'>
             <h2 class='visually-hidden'>Правая сторона</h2>
             <div class='right-side-info'>
               <h2 class='right-side-title'>Доставка</h2>
-              <p class='right-side-text'>Мы с удовольствием доставим ваш товар прямо
-                к вашему подъезду совершенно бесплатно! Ведь
+              <p class='right-side-text'>Мы с удовольствием доставим ваш товар прямо<br>
+                к вашему подъезду совершенно бесплатно! Ведь<br>
                 мы неплохо заработаем, поднимая его на ваш этаж.
               </p>
             </div>
@@ -259,13 +288,13 @@
 
       <section class='info'>
         <h2 class='visually-hidden'>Информация</h2>
-          <div class='info-delevery'>
+          <div class='info-delevery' tabindex='0'>
             <div class='info-delevery-car'>
-              <img class='info-delevery-img' src='img/delevery_car.svg' alt='машина доставки'>
+              <img class='info-delevery-img' src='img/delevery_car.svg' alt='машина доставки' width='47' height='31.1'>
             </div>
             <div class='info-delevery-desc'>
               <p class='info-delevery-text'>Доставим редкий товар под заказ</p>
-              <img class='info-delevery-icon' src='img/Инфо.svg' alt='информация'>
+              <img class='info-delevery-icon' src='img/Инфо.svg' alt='информация' width='40' height='40'>
             </div>
           </div>
 
@@ -276,8 +305,8 @@
               <div class='info-about'>
                 
                 <h2 class='info-title'>О нас</h2>
-                <p class='info-text'>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-                <p class='info-text'>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+                <p class='info-text'>Огромный выбор гаджетов не оставит равнодушным<br> гика, который есть в каждом из нас.</p>
+                <p class='info-text2'>Мы можем доставить ваш товар в самые отдалённые<br> уголки России транспортными компаниями:</p>
 
                 <ul class='info-about-delivery'>
                   <li><a>Меловые линии</a></li>
@@ -295,7 +324,7 @@
               <div class='info-contact'>
                 <h2 class='info-title'>Контакты</h2>
                 <p class='info-contact-text'>Вы можете забрать товар сами, заехав в наш офис.<br>
-                  Заодно, сможете проверить работоспособность покупки. </p>
+                  Заодно сможете проверить работоспособность покупки. </p>
                   
                 <p class='info-contact-dev'>Интернет-магазин «Девайс»</p>
 
@@ -326,9 +355,9 @@
         <div class='subscription-container'>
           <div class='subsсription-about'>
             <div class='subscription-head'>
-              <h2>
+              <p>
                 Подпишитесь<br> на рассылку
-              </h2>
+              </p>
             </div>
 
             <div class='subscription-text'>
@@ -340,11 +369,13 @@
 
           <div class='subscription-email'>
             <form class='subscription-form' action='https://echo.htmlacademy.ru/' method='POST'>
-              <input class='subscription-input' type='email'  placeholder='Ваш e-mail'>
+              <input class='subscription-input' type='email'  placeholder='Ваш e-mail' autocomplete='off'>
               <button class='subscription-button' type='submit'>Подписаться</button>
             </form>
+          
             <img class='subscription-tick-big' src='img/tick-big.svg' alt='зеленая галочка' width='14' height='14'>
             <p class='subscription-free'>Это бесплатно</p>
+            
           </div>
 
         </div>
@@ -367,7 +398,7 @@
 
         <div class='footer-column2'>
           <address class='footer-address'>
-            <p class='footer-address-text'>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+            <p class='footer-address-text'>Санкт-Петербург, набережная<br> реки Карповки, 5, литера П.</p>
           </address>
 
           <ul class='footer-menu'>
