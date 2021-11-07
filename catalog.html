@@ -19,11 +19,18 @@
         </a>
 
         <ul class='nav-list navigation-user'>
+          <div class='seach-form-container' tabindex='0'>
+            <form class='seach-form' action='https://echo.htmlacademy.ru/' method='post'>
+              <img class='seach-img' src='img/search.svg' alt='логин' width='16' height='16'>
+              <input type='text' id='seach-form' class='seach-form-input' name='seach-form-input' autocomplete='off' placeholder='Поиск по сайту'>
+              <label for='seach-form'></label>
+              <button class='seach-form-button'>Найти</button>
+              <div class='seach-form-line'></div>
+            </form>
+          </div>
           <li>
-            <a class='nav-list-user' href='#'><img class='nav-list-img' src='img/search.svg' alt='поиск'>Поиск по сайту</a>
-          </li>
-          <li>
-            <a class='nav-list-user' href='#'><img class='nav-list-img' src='img/user.svg' alt='логин' width='13' height='12'>Войти</a>
+            <a class='nav-list-user' href='#'><img class='nav-list-img' src='img/user.svg' alt='логин' width='13' height='12'>Коля Петухов</a>
+            <a href='#' class='nav-user-inlogin'>Выйти</a>
           </li>
           <li>
             <a class='nav-list-user' href='#'><img class='nav-list-img' src='img/compare.svg' alt='сравнить' width='10' height='12'>Сравнить</a>
@@ -35,8 +42,22 @@
 
         <ul class='navigation-list'>
           <li class='navigation-item nav-first'>
-            <a class='navigation-link' href='catalog.html'>Каталог товаров</a>
+            <a class='navigation-link-catalog' href='catalog.html'>Каталог товаров</a>
             <a href='catalog.html'><img class='nav-plus' src='img/plus.svg' alt='плюс' width='16' height='16'></a>
+            <div class='subcatalog'>
+              <ul class='subcatalog-list'>
+                <li><a href='catalog.html'>Виртуальная реальность</a></li>
+                <li><a href='catalog.html'>Моноподы для селфи</a></li>
+                <li><a href='catalog.html'>Экшн-камеры</a></li>
+              </ul>
+              <ul class='subcatalog-list'>
+                <li><a href='catalog.html'>Фитнес-браслеты</a></li>
+                <li><a href='catalog.html'>Умные часы</a></li>
+              </ul>
+              <ul class='subcatalog-list'>
+                <li><a href='catalog.html'>Квадрокоптеры</a></li>
+              </ul>
+            </div>
           </li>
 
           <li class='navigation-item'>
@@ -91,8 +112,11 @@
                       <option value='cheap'>Сначала дешевое</option>
                       <option value='expensive'>Сначала дорогое</option>
                   </select>
-                  <button class='visually-hidden' type='submit'>
-                      Отсортировать продукты
+                  <button class='container-form-minmax' type='submit'>
+                    <input id='sorting-minmax-button1' class='sorting-radio-button' type='radio' name='sorting-radio-minmax'>
+                    <label class='sorting-minmax sorting-max-label' for='sorting-minmax-button1'></label>
+                    <input id='sorting-minmax-button2' class='sorting-radio-button' type='radio' name='sorting-radio-minmax' checked>
+                    <label class='sorting-minmax sorting-min-label' for='sorting-minmax-button2'></label>
                   </button>
                 </form>
 
@@ -110,26 +134,36 @@
             <div class='catalog-inner-container'>
               <div class='filter'>
                       <form class='catalog-filter' action='https://echo.htmlacademy.ru/' method='GET'>
+
+                        <div class='filter-top-line'>
                           <fieldset class='catalog-filter-group'>
-
                               <legend class='catalog-filter-title'>Стоимость</legend>
-                              <button class='range-toogle toggle-min' type='button'>
-                                  <span class='visually-hidden'>Изменить минимальную цену</span>
-                              </button>
 
-                              <button class='range-toogle toggle-max' type='button'>
-                                  <span class='visually-hidden'>Изменить максимальную цену</span>
-                              </button>
+                              <div class='range'>
+                                <div class='range-scale'>
+                                  <div class='range-bar' style='left: 0px; width: 119px'>
+                                    <button class='range-toggle toggle-min'>
+                                      <span class='visually-hidden'>Изменить минимальную цену.</span>
+                                    </button>
+                                    <button class='range-toggle toggle-max'>
+                                      <span class='visually-hidden'>Изменить максимальную цену.</span>
+                                    </button>
+                                  </div>
+                                </div>
+                
+                                <div class='range-wrapper-inputs'>
+                                  <label class='catalog-filter-label'>
+                                    от<input class='range-input' type='number' value='0' name='min-price'>
+                                  </label>
+                                  <label class='catalog-filter-label'>
+                                    до <input class='range-input' type='number' value='5000' name='max-price' style='width: 45px'>
+                                  </label>
+                                </div>
+                              </div>
+                            </fieldset>
+                          </div>
 
-                              <label class='catalog-filter-label'>
-                                от <input class='catalog-filter-input' type='number' name='min-price'>
-                              </label>
-
-                              <label class='catalog-filter-label'>
-                                до <input class='catalog-filter-input' type='number' name='max-price'>
-                              </label>
-
-                          </fieldset>
+                          <div class='filter-top-line'>
                           <fieldset class='catalog-filter-group'>
                               <legend class='catalog-filter-title'>Цвет</legend>
                               <ul class='catalog-filter-list'>
@@ -170,6 +204,9 @@
                                   </li>
                               </ul>
                           </fieldset>
+                        </div>
+                        
+                        <div class='filter-top-line'>
                           <fieldset class='catalog-filter-group'>
                               <legend class='catalog-filter-title'>Bluetooth</legend>
                               <ul class='catalog-filter-list'>
@@ -187,7 +224,8 @@
                                   </li>
                               </ul>
                           </fieldset>
-                          <button class='button' type='submit'>Показать</button>
+                        </div>  
+                          <button class='button-filter' type='submit'>Показать</button>
                       </form>
               </div>
 
