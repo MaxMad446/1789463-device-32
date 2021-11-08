@@ -6,7 +6,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Document</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.ico?v=4">
+    <link rel="icon" href="favicon-32x32.png">
 </head>
 <body>
     <!-- HEADER -->
@@ -42,7 +42,8 @@
 
         <ul class='navigation-list'>
           <li class='navigation-item nav-first'>
-            <h1 class='navigation-link-catalog' href='catalog.html'>Каталог товаров</h1>
+            <h1 class='visually-hidden'>Каталог товаров</h1>
+            <a class='navigation-link-catalog' href='catalog.html'>Каталог товаров</a>
             <a href='catalog.html'><img class='nav-plus' src='img/plus.svg' alt='плюс' width='16' height='16'></a>
             <div class='subcatalog'>
               <ul class='subcatalog-list'>
@@ -112,7 +113,7 @@
                       <option value='cheap'>Сначала дешевое</option>
                       <option value='expensive'>Сначала дорогое</option>
                   </select>
-                  <div class='container-form-minmax' type='submit'>
+                  <div class='container-form-minmax'>
                     <input id='sorting-minmax-button1' class='sorting-radio-button' type='radio' name='sorting-radio-minmax'>
                     <label class='sorting-minmax sorting-max-label' for='sorting-minmax-button1'></label>
                     <input id='sorting-minmax-button2' class='sorting-radio-button' type='radio' name='sorting-radio-minmax' checked>
@@ -156,7 +157,7 @@
                                     от<input class='range-input' type='number' value='0' name='min-price'>
                                   </label>
                                   <label class='catalog-filter-label'>
-                                    до <input class='range-input' type='number' value='5000' name='max-price' width='45'>
+                                    до <input class='range-input' type='number' value='5000' name='max-price'>
                                   </label>
                                 </div>
                               </div>
