@@ -360,32 +360,56 @@ body {
 
 .slider-img1 {
     position: relative;
-    left: -20px;
+    left: -30px;
 }
 
 .slider-arrow-left {
     position: relative;
-    top: 250px;
-    left: 20px;
+    top: 245px;
+    left: 15px;
     cursor: pointer;
+    padding: 15px;
+    width: 20px;
+    height: 70px;
+
+    border: none;
     z-index: 1;
+    background-color: #ffffff;
+    background-image: url(../img/slider_arrow_left.svg) ;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .slider-arrow-right {
     position: relative;
-    top: 250px;
-    left: -58px;
+    top: 245px;
+    left: -72px;
     cursor: pointer;
+    width: 20px;
+    height: 70px;
+    padding: 15px;
+    
+    border: none;
+    background-color: #ffffff;
+    background-image: url(../img/slider_arrow_right.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .slider-arrow-left:hover, 
 .slider-arrow-right:hover {
-    opacity:  0.6px;
+    opacity: 0.6;
 }
 
 .slider-arrow-left:focus, 
 .slider-arrow-right:focus {
     outline: 2px solid #AF4FFF;
+    border-radius: 6px;
+}
+
+.slider-arrow-left:active, 
+.slider-arrow-right:active {
+    opacity: 0.3;
 }
 
 
