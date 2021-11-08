@@ -160,6 +160,10 @@ body {
     padding: 8px 8px 8px 8px;
 }
 
+.nav-list-user:hover {
+    opacity: 0.6;
+}
+
 .nav-user-inlogin {
     font-family: 'Rubik', sans-serif;
     font-style: normal;
@@ -301,6 +305,14 @@ body {
     border-radius: 20px;
     outline: none;
     padding: 8px 8px 8px 8px;
+}
+
+.navigation-link:hover {
+    margin-top: 20px;
+    margin-left: 0px;
+    padding: 0;
+    width: 125px;
+    border-bottom: 2px solid #000000;
 }
 
 .nav-plus {
@@ -508,10 +520,6 @@ body {
     right: 61px;
     display: flex;
     flex-direction: row;
-}
-
-.slider-main-input {
-    display: none;
 }
 
 .slider-main-label {
@@ -746,6 +754,8 @@ body {
 
 .range-bar {
     position: absolute;
+    left: 0;
+    width: 119px;
     height: 2px;
     background-color: #000000;
 }
@@ -1887,7 +1897,7 @@ body {
 
 /* FOOTER */
 
-footer {
+.footer {
     max-width: 100%;
     height: 321px;
     background-color: #444444;

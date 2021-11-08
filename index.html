@@ -5,6 +5,7 @@
     <title>HTML Academy: Девайс</title>
 
     <link rel='stylesheet' href='styles/styles.css'>
+    <link rel="icon" href="favicon.ico?v=4">
   </head>
   <body>
 
@@ -12,13 +13,13 @@
 
     <header class='page-header'>
       <nav class='main-navigation'>
-
+        <h1 class='visually-hidden'>Device</h1>
         <a class='navigation-logo' href='index.html'>
           <img class='navigation-logo-header' alt='DEVICE логотип' src='img/device_logo.svg' width='145' height='36'>
         </a>
 
         <ul class='nav-list navigation-user'>
-          <div class='seach-form-container' tabindex='0'>
+          <li class='seach-form-container' tabindex='0'>
             <form class='seach-form' action='https://echo.htmlacademy.ru/' method='post'>
               <img class='seach-img' src='img/search.svg' alt='логин' width='16' height='16'>
               <input type='text' id='seach-form' class='seach-form-input' name='seach-form-input' autocomplete='off' placeholder='Поиск по сайту'>
@@ -26,7 +27,7 @@
               <button class='seach-form-button'>Найти</button>
               <div class='seach-form-line'></div>
             </form>
-          </div>
+          </li>
           <li>
             <a class='nav-list-user' href='#'><img class='nav-list-img' src='img/user.svg' alt='логин' width='13' height='12'>Войти</a>
           </li>
@@ -59,15 +60,15 @@
           </li>
 
           <li class='navigation-item'>
-            <a class='navigation-link' href='#'>Доставка</a>
+            <a class='navigation-link' href='#' width='125'>Доставка</a>
           </li>
 
           <li class='navigation-item'>
-            <a class='navigation-link' href='#'>Гарантия</a>
+            <a class='navigation-link' href='#' width='125'>Гарантия</a>
           </li>
 
           <li class='navigation-item'>
-            <a class='navigation-link' href='#'>Контакты</a>
+            <a class='navigation-link' href='#' width='125'>Контакты</a>
           </li>
         </ul><!-- navigation-list end-->
       </nav>
@@ -175,12 +176,12 @@
           </div>
 
           <div class='slider-main-radio'>
-            <input class='slider-main-input' type='radio' name='slider-main-input' checked>
-            <label class='slider-main-label' for='slider-main-radio1'></label>
-            <input class='slider-main-input' type='radio' name='slider-main-input'>
-            <label class='slider-main-label' for='slider-main-radio2'></label>
-            <input class='slider-main-input' type='radio' name='slider-main-input'>
-            <label class='slider-main-label' for='slider-main-radio3'></label>
+            <input class='slider-main-input visually-hidden' type='radio' name='slider-main-input' value='yes' checked>
+            <span class='slider-main-label' id='slider-main-radio1'></span>
+            <input class='slider-main-input visually-hidden' type='radio' name='slider-main-input' value='no' checked>
+            <span class='slider-main-label' id='slider-main-radio2'></span>
+            <input class='slider-main-input visually-hidden' type='radio' name='slider-main-input' value='no' checked>
+            <span class='slider-main-label' id='slider-main-radio3'></span>
         </div>
           
     </section><!-- end slider-container -->
@@ -192,42 +193,42 @@
 
           <li class='catalog-device-element'>
             <a href='catalog.html' class='catalog-device-img'>
-              <img src='img/virt_real.svg' alt='виртуальная реальность'>
-            </a>
+              <img src='img/virt_real.svg' alt='виртуальная реальность' width='97' height='55'>
+            </a> 
             <a href='catalog.html' class='catalog-device__description'>Виртуальная<br>реальность</a>
           </li>
 
           <li class='catalog-device-element'>
             <a href='catalog.html' class='catalog-device-img'>
-              <img src='img/monopod_selfi.svg' alt='Моноподыдля селфи'>
+              <img src='img/monopod_selfi.svg' alt='Моноподыдля селфи' width='86' height='117'>
             </a>
             <a href='catalog.html' class='catalog-device__description'>Моноподы<br>для селфи</a>
           </li>
 
           <li class='catalog-device-element'>
             <a href='catalog.html' class='catalog-device-img'>
-              <img src='img/action_camera.svg' alt='экшн-камеры'>
+              <img src='img/action_camera.svg' alt='экшн-камеры' width='71' height='87'>
             </a>
             <a href='catalog.html' class='catalog-device__description'>Экшн-камеры</a>
           </li>
 
           <li class='catalog-device-element'>
             <a href='catalog.html' class='catalog-device-img'>
-              <img src='img/fitness_bracelet.svg' alt='фитнес-браслеты'>
+              <img src='img/fitness_bracelet.svg' alt='фитнес-браслеты' width='107' height='65'>
             </a>
             <a href='catalog.html' class='catalog-device__description'>Фитнес-браслеты</a>
           </li>
 
           <li class='catalog-device-element'>
             <a href='catalog.html' class='catalog-device-img'>
-              <img src='img/watch.svg' alt='умные часы'>
+              <img src='img/watch.svg' alt='умные часы' width='56' height='98'>
             </a>
             <a href='catalog.html' class='catalog-device__description'>Умные часы</a>
           </li>
 
           <li class='catalog-device-element'>
-            <a href='catalog.html' class='catalog-device-img'>
-              <img src='img/quadcopter.svg' alt='квадрокоптеры'>
+            <a href='catalog.html' class='catalog-device-img' >
+              <img src='img/quadcopter.svg' alt='квадрокоптеры' width='132' height='69'>
             </a>
             <a href='catalog.html' class='catalog-device__description'>Квадрокоптеры</a>
           </li>
@@ -290,7 +291,7 @@
         <h2 class='visually-hidden'>Информация</h2>
           <div class='info-delevery' tabindex='0'>
             <div class='info-delevery-car'>
-              <img class='info-delevery-img' src='img/delevery_car.svg' alt='машина доставки' width='47' height='31.1'>
+              <img class='info-delevery-img' src='img/delevery_car.svg' alt='машина доставки' width='47' height='31'>
             </div>
             <div class='info-delevery-desc'>
               <p class='info-delevery-text'>Доставим редкий товар под заказ</p>
@@ -387,7 +388,7 @@
     <!-- FOOTER -->
 
 
-    <footer>
+    <footer class='footer'>
       <div class='footer-container'>
 
         <div class='footer-column1'>

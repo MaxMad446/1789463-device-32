@@ -6,7 +6,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Document</title>
     <link rel="stylesheet" href="styles/styles.css">
-
+    <link rel="icon" href="favicon.ico?v=4">
 </head>
 <body>
     <!-- HEADER -->
@@ -19,7 +19,7 @@
         </a>
 
         <ul class='nav-list navigation-user'>
-          <div class='seach-form-container' tabindex='0'>
+          <li class='seach-form-container' tabindex='0'>
             <form class='seach-form' action='https://echo.htmlacademy.ru/' method='post'>
               <img class='seach-img' src='img/search.svg' alt='логин' width='16' height='16'>
               <input type='text' id='seach-form' class='seach-form-input' name='seach-form-input' autocomplete='off' placeholder='Поиск по сайту'>
@@ -27,7 +27,7 @@
               <button class='seach-form-button'>Найти</button>
               <div class='seach-form-line'></div>
             </form>
-          </div>
+          </li>
           <li>
             <a class='nav-list-user' href='#'><img class='nav-list-img' src='img/user.svg' alt='логин' width='13' height='12'>Коля Петухов</a>
             <a href='#' class='nav-user-inlogin'>Выйти</a>
@@ -42,7 +42,7 @@
 
         <ul class='navigation-list'>
           <li class='navigation-item nav-first'>
-            <a class='navigation-link-catalog' href='catalog.html'>Каталог товаров</a>
+            <h1 class='navigation-link-catalog' href='catalog.html'>Каталог товаров</h1>
             <a href='catalog.html'><img class='nav-plus' src='img/plus.svg' alt='плюс' width='16' height='16'></a>
             <div class='subcatalog'>
               <ul class='subcatalog-list'>
@@ -112,12 +112,12 @@
                       <option value='cheap'>Сначала дешевое</option>
                       <option value='expensive'>Сначала дорогое</option>
                   </select>
-                  <button class='container-form-minmax' type='submit'>
+                  <div class='container-form-minmax' type='submit'>
                     <input id='sorting-minmax-button1' class='sorting-radio-button' type='radio' name='sorting-radio-minmax'>
                     <label class='sorting-minmax sorting-max-label' for='sorting-minmax-button1'></label>
                     <input id='sorting-minmax-button2' class='sorting-radio-button' type='radio' name='sorting-radio-minmax' checked>
                     <label class='sorting-minmax sorting-min-label' for='sorting-minmax-button2'></label>
-                  </button>
+                  </div>
                 </form>
 
                
@@ -141,7 +141,7 @@
 
                               <div class='range'>
                                 <div class='range-scale'>
-                                  <div class='range-bar' style='left: 0px; width: 119px'>
+                                  <div class='range-bar'>
                                     <button class='range-toggle toggle-min'>
                                       <span class='visually-hidden'>Изменить минимальную цену.</span>
                                     </button>
@@ -156,7 +156,7 @@
                                     от<input class='range-input' type='number' value='0' name='min-price'>
                                   </label>
                                   <label class='catalog-filter-label'>
-                                    до <input class='range-input' type='number' value='5000' name='max-price' style='width: 45px'>
+                                    до <input class='range-input' type='number' value='5000' name='max-price' width='45'>
                                   </label>
                                 </div>
                               </div>
@@ -235,37 +235,37 @@
                 <ul class='product-list'>
                     <li class='product-card'>
                         <a class='product-card-link' href='product.html'>
-                            <img class='product-card-image' src='img/catalog_selfi.jpg' alt='Любительская селфи-палка'> 
+                            <img class='product-card-image' src='img/catalog_selfi.jpg' alt='Любительская селфи-палка' width='360' height='380'> 
                         </a>
                         <div class='product-text'>
-                          <h4 class='product-card-title'>Любительская селфи-палка</h4>
+                          <p class='product-card-title'>Любительская селфи-палка</p>
                           <p class='product-card-price'>500 ₽</p>
                         </div>
                     </li>
                     <li class='product-card'>
                         <a class='product-card-link' href='product.html'>
-                            <img class='product-card-image' src='img/catalog_prof-selfi.jpg' alt='Профессиональная селфи-палка'>
+                            <img class='product-card-image' src='img/catalog_prof-selfi.jpg' alt='Профессиональная селфи-палка' width='360' height='380'>
                         </a>
                         <div class='product-text'>
-                          <h4 class='product-card-title'>Профессиональная селфи-палка</h4>
+                          <p class='product-card-title'>Профессиональная селфи-палка</p>
                           <p class='product-card-price'>1 500 ₽</p>
                         </div>
                     </li> 
                     <li class='product-card'>
                         <a class='product-card-link' href='product.html'>
-                            <img class='product-card-image' src='img/catalog_super-selfi.jpg' alt='Непотопляемая селфи-палка'>
+                            <img class='product-card-image' src='img/catalog_super-selfi.jpg' alt='Непотопляемая селфи-палка' width='360' height='380'>
                         </a>
                         <div class='product-text'>
-                          <h4 class='product-card-title'>Непотопляемая селфи-палка</h4>
+                          <p class='product-card-title'>Непотопляемая селфи-палка</p>
                          <p class='product-card-price'>2 500 ₽</p> 
                         </div>
                     </li> 
                     <li class='product-card'>
                         <a class='product-card-link' href='product.html'>
-                            <img class='product-card-image' src='img/catalog_selfi-arm.jpg' alt='Селфи-палка «Следуй за мной»'>
+                            <img class='product-card-image' src='img/catalog_selfi-arm.jpg' alt='Селфи-палка «Следуй за мной»' width='360' height='380'>
                         </a>
                         <div class='product-text'>
-                          <h4 class='product-card-title'>Селфи-палка «Следуй за мной»</h4>
+                          <p class='product-card-title'>Селфи-палка «Следуй за мной»</p>
                           <p class='product-card-price'>4 900 ₽</p>
                         </div>
                     </li>
@@ -313,7 +313,7 @@
      </main>
 
       <!-- FOOTER -->
-      <footer>
+      <footer class='footer'>
         <div class='footer-container'>
   
           <div class='footer-column1'>
