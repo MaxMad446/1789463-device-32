@@ -5,7 +5,8 @@
     <title>HTML Academy: Девайс</title>
 
     <link rel='stylesheet' href='styles/styles.css'>
-    <link rel="icon" href="favicon-32x32.png">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   </head>
   <body>
 
@@ -36,6 +37,40 @@
           </li>
           <li>
             <a class='nav-list-user' href='#'><img class='nav-list-img' src='img/cart.svg' alt='корзина' width='16' height='14'>Корзина</a>
+            <div class='popover popover-cart'>
+              
+              <ul class='cart-item-list'>
+                <li class='cart-item'>
+                    <img class='cart-item-img' src='img/catalog_selfi.jpg' alt='Любительская селфи-палка' width='41' height='43'> 
+                    <p class='cart-item-title'>Любительская<br> селфи-палка</p>
+                    <button type='button' class='cart-item-button'>
+                      <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z" fill="white"/>
+                      </svg>
+                      <span class='visually-hidden'>Удалить из корзины</span>
+                    </button>
+                </li>
+                <li class='cart-item'>
+                  <img class='cart-item-img' src='img/catalog_prof-selfi.jpg' alt='Профессиональная селфи-палка'width='41' height='43'> 
+                  <p class='cart-item-title'>Профессиональная<br> селфи-палка</p>
+                  <button type='button' class='cart-item-button'>
+                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z" fill="white"/>
+                    </svg>
+                    <span class='visually-hidden'>Удалить из корзины</span>
+                  </button>
+              </li>
+              </ul> 
+              <div class='cart-item-result'>
+                <p class='cart-item-number'>Товаров: 2</p>
+                <p class='cart-item-sum'>Сумма: 2000 ₽</p>
+              </div>
+              
+              <button class='popover-content'>
+                <span class='popover-title'>Открыть корзину</span>
+              </button>
+              
+            </div>
           </li>
         </ul><!-- nav-list navigation-user end -->
 
@@ -202,14 +237,14 @@
             <a href='catalog.html' class='catalog-device-img'>
               <img src='img/virt_real.svg' alt='виртуальная реальность' width='97' height='55'>
             </a> 
-            <a href='catalog.html' class='catalog-device__description'>Виртуальная<br>реальность</a>
+            <a href='catalog.html' class='catalog-device__description'><p>Виртуальная<br> реальность</p></a>
           </li>
 
           <li class='catalog-device-element'>
             <a href='catalog.html' class='catalog-device-img'>
-              <img src='img/monopod_selfi.svg' alt='Моноподыдля селфи' width='86' height='117'>
+              <img src='img/monopod_selfi.svg' alt='Моноподы для селфи' width='86' height='117'>
             </a>
-            <a href='catalog.html' class='catalog-device__description'>Моноподы<br>для селфи</a>
+            <a href='catalog.html' class='catalog-device__description'><p>Моноподы<br> для селфи</p></a>
           </li>
 
           <li class='catalog-device-element'>
@@ -288,7 +323,7 @@
               подберут для вас наиболее выгодные <br>
               условия кредита. Выгодные для нашего банка, разумеется.
             </p>
-            <img alt='кредит' class='right-side-img' src='img/Credit.svg' width='150' height='180'>
+            <img alt='кредит' class='right-side-img' src='img/credit.svg' width='150' height='180'>
           </section>
           
         </div>
@@ -302,7 +337,7 @@
             </div>
             <div class='info-delevery-desc'>
               <p class='info-delevery-text'>Доставим редкий товар под заказ</p>
-              <img class='info-delevery-icon' src='img/Инфо.svg' alt='информация' width='40' height='40'>
+              <img class='info-delevery-icon' src='img/info.svg' alt='информация' width='40' height='40'>
             </div>
           </div>
 
@@ -426,19 +461,19 @@
             <h2 class='visually-hidden'>Социальные сети</h2>
             <ul class='footer-social-list'>
               <li class='footer-social-item'>
-                <a class='footer-social-link footer-social-facebook' href='#'>
+                <a class='footer-social-link footer-social-facebook' href='https://www.facebook.com/htmlacademy'>
                   <span class='visually-hidden'>Фейсбук</span>
                   
                 </a>
               </li>
               <li class='footer-social-item'>
-                <a class='footer-social-link footer-social-instagram' href='#'>
+                <a class='footer-social-link footer-social-instagram' href='https://www.instagram.com/htmlacademy/'>
                   <span class='visually-hidden'>Инстаграм</span>
                   
                 </a>
               </li>
               <li class='footer-social-item'>
-                <a class='footer-social-link  footer-social-tw' href='#'>
+                <a class='footer-social-link  footer-social-tw' href='https://twitter.com/htmlacademy_ru'>
                   <span class='visually-hidden'>Твиттер</span>
 
                 </a>
@@ -451,6 +486,43 @@
      
       </div>
     </footer>
+
+    <div class='modal-container modal-container-close'>
+      <div class='modal modal-auth'>
+        <button class='modal-close-button'> 
+          <span class='visually-hidden'>Закрыть</span>
+        </button>
+        <section class='modal-content'>
+          <h2 class='modal-title'>Доставка под заказ</h2>
+          <form class='auth-form' action='https://echo.htmlacademy.ru/' method='post'>
+            <p class='field-group'>
+              <span class='field-title'>Ваше имя:</span>
+              <label class='visually-hidden' for='auth-login'>Имя Фамилия</label>
+              <input class='auth-form-field field1' type='text' id='auth-login' name='auth-login' placeholder='Имя Фамилия'>
+              <span class='field-text red'>Пожалуйста, представьтесь</span>
+            </p>
+            <p class='field-group'>
+              <span class='field-title'>Ваш e-mail:</span>
+              <label class='visually-hidden' for='e-mail'>Почта</label>
+              <input class='auth-form-field field2' type='email' id='auth-password' name='auth-password' placeholder='krasotka92@mail.ru'>
+              <span class='field-text'>Забавный у вас адрес</span>
+            </p>
+            <p class='field-group'>
+              <span class='field-title'>Что нужно привезти:</span>
+              <label class='visually-hidden' for='text'>Что нужно привезти</label>
+              <input class='auth-form-field field3' type='text' id='delivery' name='delivery' placeholder='В свободной форме'>
+            </p>
+            <p class='field-group'>
+              <span class='field-title field-title-col'>Количество:</span>
+              <button class='number-minus' type='button'><img src='./img/minus-modal.svg'></button>
+              <input class='auth-form-field field4' type='number' id='delivery' min='0' name='delivery' value='1'>
+              <button class='number-plus' type='button'><img src='./img/plus-modal.svg'></button>
+            </p>
+            <button class='button-feedback auth-form-button' type='submit'>Отправить</button>
+          </form>
+        </section>
+      </div>s
+    </div>
 
   </body>
 </html>

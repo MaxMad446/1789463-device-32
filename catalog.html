@@ -4,15 +4,16 @@
     <meta charset='UTF-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Document</title>
+    <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon-32x32.png">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
 </head>
 <body>
     <!-- HEADER -->
 
-    <header class='page-header'>
-      <nav class='main-navigation'>
+    <header class='page-header ph-cat'>
+      <nav class='main-navigation ph-cat-nav'>
 
         <a class='navigation-logo' href='index.html'>
           <img class='navigation-logo-header' alt='DEVICE логотип' src='img/device_logo.svg' width='145' height='36'>
@@ -37,6 +38,40 @@
           </li>
           <li>
             <a class='nav-list-user' href='#'><img class='nav-list-img' src='img/cart.svg' alt='корзина' width='16' height='14'>Корзина</a>
+            <div class='popover popover-cart'>
+              
+              <ul class='cart-item-list'>
+                <li class='cart-item'>
+                    <img class='cart-item-img' src='img/catalog_selfi.jpg' alt='Любительская селфи-палка' width='41' height='43'> 
+                    <p class='cart-item-title'>Любительская<br> селфи-палка</p>
+                    <button type='button' class='cart-item-button'>
+                      <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z" fill="white"/>
+                      </svg>
+                      <span class='visually-hidden'>Удалить из корзины</span>
+                    </button>
+                </li>
+                <li class='cart-item'>
+                  <img class='cart-item-img' src='img/catalog_prof-selfi.jpg' alt='Профессиональная селфи-палка'width='41' height='43'> 
+                  <p class='cart-item-title'>Профессиональная<br> селфи-палка</p>
+                  <button type='button' class='cart-item-button'>
+                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z" fill="white"/>
+                    </svg>
+                    <span class='visually-hidden'>Удалить из корзины</span>
+                  </button>
+              </li>
+              </ul> 
+              <div class='cart-item-result'>
+                <p class='cart-item-number'>Товаров: 2</p>
+                <p class='cart-item-sum'>Сумма: 2000 ₽</p>
+              </div>
+              
+              <button class='popover-content'>
+                <span class='popover-title'>Открыть корзину</span>
+              </button>
+              
+            </div>
           </li>
         </ul><!-- nav-list navigation-user end -->
 
@@ -120,10 +155,8 @@
                     <label class='sorting-minmax sorting-min-label' for='sorting-minmax-button2'></label>
                   </div>
                 </form>
-
-               
-
               </div>
+
             </div>
           </div>
 
@@ -231,7 +264,7 @@
               </div>
 
             <div class='catalog-container'>
-              <div class='product-all'>
+              
 
                 <ul class='product-list'>
                     <li class='product-card'>
@@ -304,7 +337,7 @@
                   </div>
                 </div>
 
-              </div>
+              
             </div>
         
 
