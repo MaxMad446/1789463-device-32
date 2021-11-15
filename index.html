@@ -25,8 +25,7 @@
               <img class='seach-img' src='img/search.svg' alt='логин' width='16' height='16'>
               <input type='text' id='seach-form' class='seach-form-input' name='seach-form-input' autocomplete='off' placeholder='Поиск по сайту'>
               <label for='seach-form'></label>
-              <button class='seach-form-button'>Найти</button>
-              <div class='seach-form-line'></div>
+              <button class='seach-form-button' tabindex='0'>Найти</button>
             </form>
           </li>
           <li>
@@ -35,8 +34,15 @@
           <li>
             <a class='nav-list-user' href='#'><img class='nav-list-img' src='img/compare.svg' alt='сравнить' width='10' height='12'>Сравнить</a>
           </li>
-          <li>
-            <a class='nav-list-user' href='#'><img class='nav-list-img' src='img/cart.svg' alt='корзина' width='16' height='14'>Корзина</a>
+          <li class='nav-user-list-el'>
+            <a class='basket nav-list-user' href='#'>
+              <img class='nav-list-img' src='img/cart.svg' alt='корзина' width='16' height='14'>
+              <span>Корзина</span>
+            </a>
+            <div class='circle'>
+              <p>2</p>
+            </div>
+
             <div class='popover popover-cart'>
               
               <ul class='cart-item-list'>
@@ -76,8 +82,10 @@
 
         <ul class='navigation-list'>
           <li class='navigation-item nav-first'>
-            <a class='navigation-link-catalog' href='catalog.html'>Каталог товаров</a>
-            <a href='catalog.html'><img class='nav-plus' src='img/plus.svg' alt='плюс' width='16' height='16'></a>
+            <a class='navigation-link-catalog' href='catalog.html' tabindex='1'>
+              <p tabindex='0'>Каталог товаров</p>
+              <div class='nav-plus'></div>
+            </a>
             <div class='subcatalog'>
               <ul class='subcatalog-list'>
                 <li><a href='catalog.html'>Виртуальная реальность</a></li>
@@ -412,7 +420,7 @@
 
           <div class='subscription-email'>
             <form class='subscription-form' action='https://echo.htmlacademy.ru/' method='POST'>
-              <input class='subscription-input' type='email'  placeholder='Ваш e-mail' autocomplete='off'>
+              <input class='subscription-input' type='email'  placeholder='Ваш e-mail' autocomplete='off' tabindex='0'>
               <button class='subscription-button' type='submit'>Подписаться</button>
             </form>
           

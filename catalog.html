@@ -7,7 +7,7 @@
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.ico">
 </head>
 <body>
     <!-- HEADER -->
@@ -78,8 +78,10 @@
         <ul class='navigation-list'>
           <li class='navigation-item nav-first'>
             <h1 class='visually-hidden'>Каталог товаров</h1>
-            <a class='navigation-link-catalog' href='catalog.html'>Каталог товаров</a>
-            <a href='catalog.html'><img class='nav-plus' src='img/plus.svg' alt='плюс' width='16' height='16'></a>
+            <a class='navigation-link-catalog' href='catalog.html' tabindex='1'>
+              <p tabindex='0'>Каталог товаров</p>
+              <div class='nav-plus'></div>
+            </a>
             <div class='subcatalog'>
               <ul class='subcatalog-list'>
                 <li><a href='catalog.html'>Виртуальная реальность</a></li>
@@ -267,36 +269,53 @@
               
 
                 <ul class='product-list'>
+
                     <li class='product-card'>
+
                         <a class='product-card-link' href='product.html'>
-                            <img class='product-card-image' src='img/catalog_selfi.jpg' alt='Любительская селфи-палка' width='360' height='380'> 
+                            <img class='product-card-image' src='img/product-1.jpg' alt='Любительская селфи-палка' width='360' height='380'>
+                            <div class='product-card-button-yellow'>
+                              <span class='product-card-button'>Подробнее</span>
+                            </div> 
                         </a>
                         <div class='product-text'>
                           <p class='product-card-title'>Любительская селфи-палка</p>
                           <p class='product-card-price'>500 ₽</p>
                         </div>
+
                     </li>
+
                     <li class='product-card'>
                         <a class='product-card-link' href='product.html'>
                             <img class='product-card-image' src='img/catalog_prof-selfi.jpg' alt='Профессиональная селфи-палка' width='360' height='380'>
+                            <div class='product-card-button-yellow'>
+                              <span class='product-card-button'>Подробнее</span>
+                            </div> 
                         </a>
                         <div class='product-text'>
-                          <p class='product-card-title'>Профессиональная селфи-палка</p>
+                          <p class='product-card-title'>Профессиональная<br> селфи-палка</p>
                           <p class='product-card-price'>1 500 ₽</p>
                         </div>
                     </li> 
                     <li class='product-card'>
                         <a class='product-card-link' href='product.html'>
                             <img class='product-card-image' src='img/catalog_super-selfi.jpg' alt='Непотопляемая селфи-палка' width='360' height='380'>
+                            <div class='product-card-button-yellow'>
+                              <span class='product-card-button'>Подробнее</span>
+                            </div> 
                         </a>
                         <div class='product-text'>
-                          <p class='product-card-title'>Непотопляемая селфи-палка</p>
+                          <p class='product-card-title'>Непотопляемая<br> селфи-палка</p>
                          <p class='product-card-price'>2 500 ₽</p> 
                         </div>
                     </li> 
                     <li class='product-card'>
                         <a class='product-card-link' href='product.html'>
                             <img class='product-card-image' src='img/catalog_selfi-arm.jpg' alt='Селфи-палка «Следуй за мной»' width='360' height='380'>
+                            <div class='product-card-button-yellow'>
+                              <span class='product-card-button'>Подробнее</span>
+                            </div> 
+                            <span class='product-card-leib'>new</span>
                         </a>
                         <div class='product-text'>
                           <p class='product-card-title'>Селфи-палка «Следуй за мной»</p>
@@ -358,7 +377,7 @@
   
           <div class='footer-column2'>
             <address class='footer-address'>
-              <p class='footer-address-text'>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+              <p class='footer-address-text'>Санкт-Петербург, набережная<br> реки Карповки, 5, литера П.</p>
             </address>
   
             <ul class='footer-menu'>
