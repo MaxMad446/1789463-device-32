@@ -20,15 +20,11 @@
         </a>
 
         <ul class="nav-list navigation-user">
-          <li class="seach-form-container" tabindex="0">
+          <li class="seach-form-container">
             <form class="seach-form" action="https://echo.htmlacademy.ru/" method="post">
-              <svg  class="seach-img" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15.7 14.3L12.6 11.2C13.5 10 14 8.6 14 7C14 3.1 10.9 0 7 0C3.1 0 0 3.1 0 7C0 10.9 3.1 14 7 14C8.6 14 10 13.5 11.2 12.6L14.3 15.7C14.5 15.9 14.7 16 15 16C15.6 16 16 15.6 16 15C16 14.8 15.9 14.5 15.7 14.3ZM2 7C2 4.2 4.2 2 7 2C9.8 2 12 4.2 12 7C12 9.8 9.8 12 7 12C4.2 12 2 9.8 2 7Z" fill="black"/>
-              </svg>
-              <input type="text" id="seach-form" class="seach-form-input" name="seach-form-input" autocomplete="off" placeholder="Поиск по сайту">
-              <label for="seach-form"></label>
-              <button class="seach-form-button" type="button">Найти</button>
-              <div class="seach-form-line"></div>
+              <label class="visually-hidden" for="seach-form">Поисковая форма</label>
+              <input class="seach-form-input input-text" type="text" id="seach-form"  name="seach-form-input" autocomplete="off" placeholder="Поиск по сайту">
+              <button class="seach-form-button" type="submit">Найти</button>
             </form>
           </li>
           <li>
@@ -162,12 +158,12 @@
                 </select>
                 <div class="container-form-minmax">
                   <input class="sorting-radio-button" id="sorting-minmax-button1" type="radio" name="sorting-radio-minmax" value="no">
-                  <label class="sorting-minmax sorting-max-label" for="sorting-minmax-button1">
+                  <label class="sorting-minmax sorting-max-label" for="sorting-minmax-button1" tabindex="0">
                     <span class="visually-hidden">Стрелка вверх</span>
                   </label>
                   <input class="sorting-radio-button" id="sorting-minmax-button2"  type="radio" name="sorting-radio-minmax"
                   value="yes" checked>
-                  <label class="sorting-minmax sorting-min-label" for="sorting-minmax-button2">
+                  <label class="sorting-minmax sorting-min-label" for="sorting-minmax-button2" tabindex="0">
                     <span class="visually-hidden">Стрелка вниз</span>
                   </label>
                 </div>
@@ -194,59 +190,55 @@
                             <button class="range-toggle toggle-min" type="button">
                               <span class="visually-hidden">Изменить минимальную цену.</span>
                             </button>
+                            <label class="catalog-filter-label">
+                              от<input class="range-input" type="number" value="0" name="min-price">
+                            </label>
                             <button class="range-toggle toggle-max" type="button">
                               <span class="visually-hidden">Изменить максимальную цену.</span>
-                                </button>
+                            </button>
+                            <label class="catalog-filter-label">
+                              до <input class="range-input" type="number" value="5000" name="max-price">
+                            </label>
                           </div>
-                        </div>
-                        
-                        <div class="range-wrapper-inputs">
-                          <label class="catalog-filter-label">
-                            от<input class="range-input" type="number" value="0" name="min-price">
-                          </label>
-                          <label class="catalog-filter-label">
-                            до <input class="range-input" type="number" value="5000" name="max-price">
-                          </label>
-                        </div>
-                      </div>
+                        </div> 
                   </fieldset>
                 </div>
 
                 <div class="filter-top-line">
                   <fieldset class="catalog-filter-group filter-2">
-                      <legend class="catalog-filter-title ">Цвет</legend>
+                      <legend class="catalog-filter-title">Цвет</legend>
                       <ul class="catalog-filter-list">
                         <li class="catalog-filter-item">
                             <label class="control" tabindex="0">
-                                <input class="visually-hidden control-input" type="checkbox" name="черный" checked>
+                                <input class="visually-hidden control-input" type="checkbox" name="черный" checked tabindex="-1">
                                 <span class="control-mark"></span>
                                 <span class="control-label">Черный</span>
                             </label>
                         </li>
                         <li class="catalog-filter-item">
                             <label class="control" tabindex="0">
-                                <input class="visually-hidden control-input" type="checkbox" name="белый" checked>
+                                <input class="visually-hidden control-input" type="checkbox" name="белый" checked tabindex="-1">
                                 <span class="control-mark"></span>
                                 <span class="control-label">Белый</span>
                             </label>
                         </li>
                         <li class="catalog-filter-item">
                             <label class="control" tabindex="0">
-                                <input class="visually-hidden control-input" type="checkbox" name="синий">
+                                <input class="visually-hidden control-input" type="checkbox" name="синий" tabindex="-1">
                                 <span class="control-mark"></span>
                                 <span class="control-label">Синий</span>
                             </label>
                         </li>
                         <li class="catalog-filter-item">
                             <label class="control" tabindex="0">
-                                <input class="visually-hidden control-input" type="checkbox" name="красный">
+                                <input class="visually-hidden control-input" type="checkbox" name="красный" tabindex="-1">
                                 <span class="control-mark"></span>
                                 <span class="control-label">Красный</span>
                             </label>
                         </li>
                         <li class="catalog-filter-item">
                             <label class="control" tabindex="0">
-                                <input class="visually-hidden control-input" type="checkbox" name="розовый">
+                                <input class="visually-hidden control-input" type="checkbox" name="розовый" tabindex="-1">
                                 <span class="control-mark"></span>
                                 <span class="control-label">Розовый</span>
                             </label>
@@ -260,13 +252,13 @@
                       <legend class="catalog-filter-title">Bluetooth</legend>
                       <ul class="catalog-filter-list">
                         <li class="catalog-filter-item">
-                          <label class="control">
-                              <input class="visually-hidden control-input" type="radio" name="bluetooth" value="yes" checked>
+                          <label class="control" tabindex="0">
+                              <input class="visually-hidden control-input" type="radio" name="bluetooth" value="yes" tabindex="-1" checked>
                               <span class="control-mark"></span>
                               <span class="control-label">Eсть</span>
                           </label>
-                          <label class="control">
-                              <input class="visually-hidden control-input" type="radio" name="bluetooth" value="no" checked>
+                          <label class="control" tabindex="0">
+                              <input class="visually-hidden control-input" type="radio" name="bluetooth" value="no" tabindex="-1" >
                               <span class="control-mark"></span>
                               <span class="control-label">Нет</span>
                           </label>

@@ -20,14 +20,11 @@
         </a>
 
         <ul class="nav-list navigation-user">
-          <li class="seach-form-container" tabindex="0">
+          <li class="seach-form-container">
             <form class="seach-form" action="https://echo.htmlacademy.ru/" method="post">
-              <svg  class="seach-img" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15.7 14.3L12.6 11.2C13.5 10 14 8.6 14 7C14 3.1 10.9 0 7 0C3.1 0 0 3.1 0 7C0 10.9 3.1 14 7 14C8.6 14 10 13.5 11.2 12.6L14.3 15.7C14.5 15.9 14.7 16 15 16C15.6 16 16 15.6 16 15C16 14.8 15.9 14.5 15.7 14.3ZM2 7C2 4.2 4.2 2 7 2C9.8 2 12 4.2 12 7C12 9.8 9.8 12 7 12C4.2 12 2 9.8 2 7Z" fill="black"/>
-              </svg>
-              <input class="seach-form-input input-text" type="text" id="seach-form"  name="seach-form-input" autocomplete="off" placeholder="Поиск по сайту">
               <label class="visually-hidden" for="seach-form">Поисковая форма</label>
-              <button class="seach-form-button" tabindex="0" type="button">Найти</button>
+              <input class="seach-form-input input-text" type="text" id="seach-form"  name="seach-form-input" autocomplete="off" placeholder="Поиск по сайту">
+              <button class="seach-form-button" type="submit">Найти</button>
             </form>
           </li>
           <li>
@@ -130,116 +127,126 @@
 
     <section class="slider-container">
       <h2 class="visually-hidden">Слайдер товаров</h2>
-          <div class="slider slider-1">
-            <div class="slider-img">
-              <button class="slider-arrow-left" type="button">
+
+          <div class="slider-control">
+            <button class="slider-arrow-left" type="button">
                 <span class="visually-hidden">Левая стрелка</span>
               </button>
-                <img class="slider-img1" src="img/slider/slider-1.png" alt="квадрокоптер с лазером." width="560" height="560">
               <button class="slider-arrow-right" type="button">
                 <span class="visually-hidden">Правая стрелка</span>
               </button>
-            </div>
-            <div class="slider__item">
-              <div class="slider__item-number">
-                <span class="slider-item-slide-num">01</span>
-              </div>
-              <h2 class="slider-item-title">Порхает как бабочка,<br> жалит как пчела!</h2>
-              <p class="slider__item-text">Этот обычный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером, замаскированным под стандартную камеру.</p>
-              <div class="slider-button-pointer">
-                <a class="slider__item-link" href="#">Подробнее</a>
-                <div class="slider-pointer">
-                  <label class="slider-main-radio">
-                    <input class="visually-hidden slider-main-input" type="radio" name="slider-main-input" value="yes" checked tabindex="1">
-                    <span class="slider-main-label" id="slider-main-radio1"></span>
-                    <span class="visually-hidden">Кругляш первый</span>
-                  </label>
-                  <label class="slider-main-radio">
-                    <input class="visually-hidden slider-main-input" type="radio" name="slider-main-input" value="no" tabindex="1">
-                    <span class="slider-main-label" id="slider-main-radio2"></span>
-                    <span class="visually-hidden">Кругляш второй</span>
-                  </label>
-                  <label class="slider-main-radio">
-                    <input class="visually-hidden slider-main-input" type="radio" name="slider-main-input" value="no" tabindex="1">
-                    <span class="slider-main-label" id="slider-main-radio3"></span>
-                    <span class="visually-hidden">Кругляш третий</span>
-                  </label>
-                </div>
-              </div>
-              
-              <div class="slider__item-atributes">
-                <div>
-                  <h2>800 м</h2>
-                  <p>Дальность полета</p>
-                </div>
-                <div>
-                  <h2>50 м</h2>
-                  <p>Радиус поражения</p>
-                </div>
-              </div>
-            </div><!-- end slider__item-->
-          </div><!-- end slider slider-1 -->
+          </div>
 
-          <div class="slider slider-2">
-            <div class="slider-img">
-              <button class="slider-arrow-left" type="button"></button>
-              <img class="slider-img2" src="img/slider/slider-2.png" alt="фитнес-браслет."  width="560" height="560">
-              <button class="slider-arrow-right" type="button"></button>
-            </div>
-            <div class="slider__item">
-              <div class="slider__item-number">
-                <span class="slider-item-slide-num">02</span>
-              </div>
-              <h2 class="slider-item-title">Худеем правильно!</h2>
-              <p class="slider__item-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-              <div class="slider-button-pointer">
-                <a class="slider__item-link" href="#">Подробнее</a>
-              </div>
-              <div class="slider__item-atributes">
-                <div>
-                    <h2>48 часов</h2>
-                    <p>Без подзарядки</p>
-                </div>
-              </div>
-            </div><!-- end slider-item -->
-          </div><!-- end slider slider-2 -->
+    
+          <!-- для смены слайда у текущего слайда нужно изменить класс slider-a на slider-n, а у следующего заменить класс slider-n на класс slider-a -->
 
-          <div class="slider slider-3 ">
-            <div class="slider-img">
-              <button class="slider-arrow-left" type="button"></button>
-              <img class="slider-img3" src="img/slider/slider-3.png" alt="селфи-палка."  width="560" height="560">
-              <button class="slider-arrow-right" type="button"></button>
-            </div>
-            <div class="slider__item">
-              <div class="slider__item-number">
-                <span class="slider-item-slide-num">03</span>
-              </div>  
-              <h2 class="slider-item-title">Делай селфи, как Бен Стиллер!</h2>
-              <p class="slider__item-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-              <div class="slider-button-pointer">
-                <a class="slider__item-link" href="#">Подробнее</a>
+          <div class='slider-content'>
+            <div class="slider slider-a">
+              <div class="slider-img">
+                  <img class="slider-img1" src="img/slider/slider-1.png" alt="квадрокоптер с лазером." width="560" height="560">
               </div>
-              <div class="slider__item-atributes">
-                <div>
-                    <h2>8,5 м</h2>
-                    <p>Длина палки</p>
+              <div class="slider__item">
+                <div class="slider__item-number">
+                  <span class="slider-item-slide-num">01</span>
                 </div>
-                <div >
-                    <h2>5 кг</h2>
-                    <p>Вес палки</p>
+                <h2 class="slider-item-title">Порхает как бабочка,<br> жалит как пчела!</h2>
+                <p class="slider__item-text">Этот обычный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером, замаскированным под стандартную камеру.
+                </p>
+                <div class="slider-button-pointer">
+                  <a class="slider__item-link" href="#">Подробнее</a>
                 </div>
-                <div>
-                    <h2>Карбон</h2>
-                    <p>Материал</p>
+                <div class="slider__item-atributes">
+                  <div>
+                    <h2>800 м</h2>
+                    <p>Дальность полета</p>
+                  </div>
+                  <div>
+                    <h2>50 м</h2>
+                    <p>Радиус поражения</p>
+                  </div>
                 </div>
+              </div><!-- end slider__item-->
+            </div><!-- end slider slider-1 -->
+
+            <div class="slider slider-n">
+              <div class="slider-img">
+                <img class="slider-img2" src="img/slider/slider-2.png" alt="фитнес-браслет."  width="560" height="560">
               </div>
-            </div><!-- end slider-item -->
-          </div><!-- end slider slider-3 -->
+              <div class="slider__item">
+                <div class="slider__item-number">
+                  <span class="slider-item-slide-num">02</span>
+                </div>
+                <h2 class="slider-item-title">Худеем правильно!</h2>
+                <p class="slider__item-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                <div class="slider-button-pointer">
+                  <a class="slider__item-link" href="#">Подробнее</a>
+                </div>
+                <div class="slider__item-atributes">
+                  <div>
+                      <h2>48 часов</h2>
+                      <p>Без подзарядки</p>
+                  </div>
+                </div>
+              </div><!-- end slider-item -->
+            </div><!-- end slider slider-2 -->
+
+            <div class="slider slider-n ">
+              <div class="slider-img">
+                <img class="slider-img3" src="img/slider/slider-3.png" alt="селфи-палка."  width="560" height="560">
+              </div>
+              <div class="slider__item">
+                <div class="slider__item-number">
+                  <span class="slider-item-slide-num">03</span>
+                </div>  
+                <h2 class="slider-item-title">Делай селфи, как Бен Стиллер!</h2>
+                <p class="slider__item-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+                <div class="slider-button-pointer">
+                  <a class="slider__item-link" href="#">Подробнее</a>
+                </div>
+      
+                <div class="slider__item-atributes">
+                  <div>
+                      <h2>8,5 м</h2>
+                      <p>Длина палки</p>
+                  </div>
+                  <div >
+                      <h2>5 кг</h2>
+                      <p>Вес палки</p>
+                  </div>
+                  <div>
+                      <h2>Карбон</h2>
+                      <p>Материал</p>
+                  </div>
+                </div>
+              </div><!-- end slider-item -->
+            </div><!-- end slider slider-3 -->
+        </div>
+
+        <div class="slider-pointer">
+          <ol class="slider-pagination">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                <span class="visually-hidden">1 продукция</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">2 продукция</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">3 продукция</span>
+              </button>
+            </li>
+          </ol>
+        </div>
 
     </section><!-- end slider-container -->
 
+
     
-      <section class="catalog-device">
+    <section class="catalog-device">
         <h2 class="visually-hidden">Каталог девайсов</h2>
         <ul class="catalog-device__list">
 
@@ -368,12 +375,14 @@
 
           <section class="right-side right-side2 visually-hidden" id="right-side2">
             <h2 class="visually-hidden">Правая сторона2</h2>
-            <h2 class="right-side-title">Гарантия</h2>
-            <p class="right-side-text">
-              Если из-за возгорания купленного у нас товара у вас сгорит дом — 
-              не переживайте, мы выдадим вам новый.<br>
-              Товар, не дом, конечно же.
-            </p>
+            <div class="right-side-info">
+              <h2 class="right-side-title">Гарантия</h2>
+              <p class="right-side-text">
+                Если из-за возгорания купленного у нас товара у вас сгорит дом — 
+                не переживайте, мы выдадим вам новый.<br>
+                Товар, не дом, конечно же.
+              </p>
+            </div>
             <svg class="right-side-img" aria-hidden="true" focusable="false" width="171" height="195" viewBox="0 0 171 195" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_2867:244)">
               <path d="M77.6941 174.636C77.5901 174.506 67.1991 161.64 65.0851 158.876C63.7641 157.149 61.7781 156.198 59.4921 156.198C56.9321 156.198 54.6561 157.368 53.9801 157.751L48.4941 160.494C46.7211 160.015 42.9071 158.544 39.2141 154.226C35.9301 150.387 35.9531 145.24 36.1281 143.127L42.0211 137.234C45.1141 134.517 44.4731 130.718 43.2671 128.803L43.0481 128.492C43.0481 128.492 30.1861 112.271 28.3821 109.994C27.3931 108.745 25.9071 108.056 24.1981 108.056C21.3491 108.056 18.3191 110.031 17.4421 110.648C6.55711 118.397 5.85611 125.21 5.81111 125.961L5.78711 126.375L5.86111 126.784C12.2731 162.51 31.8871 177.921 41.3141 185.327C42.4621 186.228 43.4541 187.008 44.1681 187.633C50.7311 193.38 57.9301 194 60.7211 194C63.0961 193.999 65.2011 193.595 66.8101 192.829C71.1761 190.751 76.2351 184.819 77.6821 183.051C80.1831 179.992 78.9651 176.452 77.8501 174.843L77.6941 174.636ZM63.8011 186.509C63.3021 186.746 62.2311 187 60.7201 187C59.1601 187 53.6881 186.666 48.7761 182.368C47.9221 181.621 46.8631 180.789 45.6371 179.825C36.9431 172.995 18.9081 158.824 12.8571 126.141C13.1461 125.162 14.6861 121.203 21.4771 116.37C22.1291 115.917 22.9851 115.466 23.5961 115.228C26.4271 118.8 35.0061 129.62 37.0981 132.258L29.5701 139.785L29.3671 140.84C29.2861 141.262 27.4561 151.249 33.8941 158.777C40.1801 166.126 47.1441 167.444 48.4771 167.633L49.5591 167.787L57.2031 163.964L57.4211 163.846C57.7021 163.679 58.7561 163.198 59.4921 163.198C59.5281 163.198 59.5571 163.199 59.5801 163.201C61.7291 166.001 70.6851 177.098 72.0801 178.825C72.0811 178.829 72.0821 178.832 72.0841 178.835C69.5221 181.93 65.9111 185.504 63.8011 186.509Z" fill="white"/>
@@ -396,16 +405,22 @@
 
           <section class="right-side right-side3 visually-hidden" id="right-side3">
             <h2 class="visually-hidden">Правая сторона3</h2>
-            <h2 class="right-side-title">Кредит</h2>
-            <p class="right-side-text">
-              Залезть в долговую яму стало проще! Кредитные консультанты 
-              подберут для вас наиболее выгодные <br>
-              условия кредита. Выгодные для нашего банка, разумеется.
-            </p>
-            <svg class="right-side-img" aria-hidden="true" focusable="false" width="149" height="181" viewBox="0 0 149 181" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M134.25 78.627C142.396 78.627 149 72.0232 149 63.877C149 55.7308 142.396 49.127 134.25 49.127C126.104 49.127 119.5 55.7308 119.5 63.877C119.5 72.0232 126.104 78.627 134.25 78.627Z" fill="white"/>
-              <path d="M82.1131 134.544L75.0391 152.419L52.2151 167.336C50.0471 168.568 48.5811 170.895 48.5811 173.566C48.5811 177.524 51.7891 180.733 55.7481 180.733C57.2831 180.733 58.7031 180.246 59.8691 179.423C63.6301 177.052 82.2201 165.339 85.3641 163.543C88.8641 161.543 89.4891 158.418 89.4891 158.418L94.3641 142.418C94.3641 142.418 94.3641 142.418 88.6141 139.793C82.8641 137.168 82.1131 134.544 82.1131 134.544Z" fill="white"/>
-              <path d="M132.321 136.462C132.321 136.462 131.163 132.628 127.742 131.295C124.321 129.962 109.655 123.545 109.655 123.545L125.071 97.961C125.071 97.961 128.905 88.961 124.738 84.544C120.571 80.127 110.988 74.794 110.988 74.794H103.467L119.266 47.993C122.62 42.307 120.709 34.912 115.024 31.561L65.6328 2.447C59.9468 -0.905005 52.5538 1.005 49.2018 6.691L2.14382 86.519C-1.20718 92.204 0.701817 99.599 6.38782 102.951L55.7778 132.064C61.4638 135.416 68.8588 133.505 72.2098 127.822L95.1438 88.919H103.24L88.4898 115.128C88.4898 115.128 83.3558 124.342 88.1558 129.378C92.3648 133.794 100.823 136.294 100.823 136.294L118.073 142.795L123.174 174.086L123.183 174.085C123.732 177.498 126.682 180.108 130.25 180.108C134.208 180.108 137.416 176.899 137.416 172.941C137.416 172.752 137.402 172.566 137.388 172.381L137.416 172.377L132.321 136.462ZM10.9578 95.198C9.55682 94.372 9.07082 92.49 9.89682 91.09L56.9558 11.261C57.7818 9.85999 59.6628 9.373 61.0628 10.199L72.5838 16.991L22.4798 101.989L10.9578 95.198ZM64.4558 123.252C63.6298 124.652 61.7488 125.139 60.3488 124.313L30.2328 106.559L80.3398 21.563L110.453 39.316C111.855 40.142 112.34 42.023 111.515 43.423L93.0218 74.795H84.2388L64.3228 89.222C63.8808 89.474 63.4698 89.775 63.0928 90.113L63.0618 90.135L63.0638 90.138C61.6188 91.45 60.7058 93.336 60.7058 95.442C60.7058 99.4 63.9138 102.609 67.8728 102.609C69.4208 102.609 70.8508 102.113 72.0218 101.278L72.0238 101.281L72.0948 101.223C72.2768 101.09 72.4508 100.95 72.6188 100.8L82.2788 93.016L64.4558 123.252Z" fill="white"/>
+            <div class="right-side-info">
+              <h2 class="right-side-title">Кредит</h2>
+              <p class="right-side-text">
+                Залезть в долговую яму стало проще! Кредитные консультанты 
+                подберут для вас наиболее выгодные <br>
+                условия кредита. Выгодные для нашего банка, разумеется.
+              </p>
+            </div>
+            <svg class="right-side-img" aria-hidden="true" focusable="false" width="156" height="188" viewBox="0 0 156 188" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M141.25 83.627C149.396 83.627 156 77.0232 156 68.877C156 60.7308 149.396 54.127 141.25 54.127C133.104 54.127 126.5 60.7308 126.5 68.877C126.5 77.0232 133.104 83.627 141.25 83.627Z" fill="white"/>
+              <path d="M89.1131 139.544L82.0391 157.419L59.2151 172.336C57.0471 173.568 55.5811 175.895 55.5811 178.566C55.5811 182.524 58.7891 185.733 62.7481 185.733C64.2831 185.733 65.7031 185.246 66.8691 184.423C70.6301 182.052 89.2201 170.339 92.3641 168.543C95.8641 166.543 96.4891 163.418 96.4891 163.418L101.364 147.418C101.364 147.418 101.364 147.418 95.6141 144.793C89.8641 142.168 89.1131 139.544 89.1131 139.544Z" fill="white"/>
+              <path d="M139.321 141.462C139.321 141.462 138.163 137.628 134.742 136.295C131.321 134.962 116.655 128.545 116.655 128.545L132.071 102.961C132.071 102.961 135.905 93.961 131.738 89.544C127.571 85.127 117.988 79.794 117.988 79.794H110.467L126.266 52.993C129.62 47.307 127.709 39.912 122.024 36.561L72.6328 7.447C66.9468 4.095 59.5538 6.005 56.2018 11.691L9.14382 91.519C5.79282 97.204 7.70182 104.599 13.3878 107.951L62.7778 137.064C68.4638 140.416 75.8588 138.505 79.2098 132.822L102.144 93.919H110.24L95.4898 120.128C95.4898 120.128 90.3558 129.342 95.1558 134.378C99.3648 138.794 107.823 141.294 107.823 141.294L125.073 147.795L130.174 179.086L130.183 179.085C130.732 182.498 133.682 185.108 137.25 185.108C141.208 185.108 144.416 181.899 144.416 177.941C144.416 177.752 144.402 177.566 144.388 177.381L144.416 177.377L139.321 141.462ZM17.9578 100.198C16.5568 99.372 16.0708 97.49 16.8968 96.09L63.9558 16.261C64.7818 14.86 66.6628 14.373 68.0628 15.199L79.5838 21.991L29.4798 106.989L17.9578 100.198ZM71.4558 128.252C70.6298 129.652 68.7488 130.139 67.3488 129.313L37.2328 111.559L87.3398 26.563L117.453 44.316C118.855 45.142 119.34 47.023 118.515 48.423L100.022 79.795H91.2388L71.3228 94.222C70.8808 94.474 70.4698 94.775 70.0928 95.113L70.0618 95.135L70.0638 95.138C68.6188 96.45 67.7058 98.336 67.7058 100.442C67.7058 104.4 70.9138 107.609 74.8728 107.609C76.4208 107.609 77.8508 107.113 79.0218 106.278L79.0238 106.281L79.0948 106.223C79.2768 106.09 79.4508 105.95 79.6188 105.8L89.2788 98.016L71.4558 128.252Z" fill="white"/>
+              <path d="M49.2189 5.94296L2.16091 85.772C-1.19009 91.457 0.718907 98.852 6.40491 102.204L55.7949 131.317C61.4809 134.669 68.8759 132.758 72.2269 127.075L119.284 47.246C122.638 41.56 120.727 34.165 115.042 30.814L65.6499 1.69996C59.9649 -1.65204 52.5709 0.257962 49.2189 5.94296ZM9.91391 90.343L56.9729 10.514C57.7989 9.11296 59.6799 8.62596 61.0799 9.45196L72.6009 16.244L22.4959 101.242L10.9739 94.451C9.57391 93.625 9.08791 91.743 9.91391 90.343ZM111.531 42.676L64.4719 122.505C63.6459 123.905 61.7649 124.392 60.3649 123.566L30.2489 105.812L80.3549 20.816L110.468 38.569C111.871 39.394 112.355 41.275 111.531 42.676Z" fill="#F0C42E"/>
+              <path d="M135.25 77.833C143.396 77.833 150 71.2292 150 63.083C150 54.9368 143.396 48.333 135.25 48.333C127.104 48.333 120.5 54.9368 120.5 63.083C120.5 71.2292 127.104 77.833 135.25 77.833Z" fill="#3A3A3A"/>
+              <path d="M81.8748 133.75L74.8008 151.625L51.9758 166.542C49.8078 167.774 48.3418 170.101 48.3418 172.772C48.3418 176.73 51.5498 179.939 55.5088 179.939C57.0438 179.939 58.4638 179.452 59.6298 178.629C63.3908 176.258 81.9808 164.545 85.1248 162.749C88.6248 160.749 89.2498 157.624 89.2498 157.624L94.1248 141.624C94.1248 141.624 94.1248 141.624 88.3748 138.999C82.6248 136.374 81.8748 133.75 81.8748 133.75Z" fill="#3A3A3A"/>
+              <path d="M132.083 135.668C132.083 135.668 130.925 131.834 127.504 130.501C124.083 129.168 109.417 122.751 109.417 122.751L124.833 97.167C124.833 97.167 128.667 88.167 124.5 83.75C120.333 79.333 110.75 74 110.75 74H83.9998L64.0848 88.427C63.6428 88.68 63.2318 88.98 62.8548 89.318L62.8238 89.34L62.8258 89.343C61.3808 90.654 60.4678 92.541 60.4678 94.646C60.4678 98.604 63.6758 101.813 67.6348 101.813C69.1828 101.813 70.6128 101.317 71.7838 100.482L71.7858 100.485L71.8568 100.427C72.0388 100.294 72.2138 100.154 72.3818 100.004L87.1248 88.123H103L88.2498 114.332C88.2498 114.332 83.1158 123.546 87.9158 128.582C92.1248 132.998 100.583 135.498 100.583 135.498L117.833 141.999L122.934 173.29L122.943 173.289C123.492 176.702 126.442 179.312 130.01 179.312C133.968 179.312 137.176 176.103 137.176 172.145C137.176 171.956 137.162 171.77 137.148 171.585L137.176 171.581L132.083 135.668Z" fill="#3A3A3A"/>
               </svg>
               <span class="visually-hidden">Кредит</span>              
           </section>
@@ -576,56 +591,66 @@
 
     <div class="modal-container modal-container-close">
       <div class="modal modal-auth">
-        <button class="modal-close-button" type="button"> 
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
-        <section class="modal-content">
-          <h2 class="modal-title">Доставка под заказ</h2>
-          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="field-group">
-              <span class="field-title">Ваше имя:</span>
-              <label class="visually-hidden" for="auth-login">Имя Фамилия</label>
-              <input class="auth-form-field field1" type="text" id="auth-login" name="auth-login" placeholder="Имя Фамилия">
-              <span class="field-text red">Пожалуйста, представьтесь</span>
-            </p>
-            <p class="field-group">
-              <span class="field-title">Ваш e-mail:</span>
-              <label class="visually-hidden" for="e-mail">Почта</label>
-              <input class="auth-form-field field2" type="email" id="e-mail" name="auth-password"   placeholder="krasotka92@mail.ru">
-              <span class="field-text">Забавный у вас адрес</span>
-            </p>
-            <p class="field-group field-group3">
-              <span class="field-title">Что нужно привезти:</span>
-              <label class="visually-hidden field-group-text" for="text-placeholder">Что нужно привезти</label>
-              <input class="auth-form-field field3" type="text" id="text-placeholder" name="delivery" placeholder="В свободной форме">
-            </p>
-            <p class="field-group field-group4">
-              <span class="field-title field-title-col">Количество:</span>
-              <button class="number-minus" type="button">
-                <svg class="minus-svg" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g opacity="0.3">
-                  <path d="M16 7H0V9H16V7Z" fill="black"/>
-                  </g>
+        <h2 class="modal-title">Доставка под заказ</h2>
+        <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="field-group auth-form-username">
+            <label class="form-label" for="auth-login">Ваше имя:
+              <svg class="auth-form-icon" aria-hidden="true" focusable="false" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 12H13C12.8 9.4 10.9 7.2 8.3 6.5C9.3 5.9 10 4.8 10 3.5C10 1.6 8.4 0 6.5 0C4.6 0 3 1.6 3 3.5C3 4.8 3.7 5.9 4.7 6.5C2.1 7.2 0.2 9.4 0 12Z"/>
+              </svg>
+              <span class="visually-hidden">Пользователь</span>
+            </label>
+            <input class="field-form-text" type="text" name="username" id="auth-login" placeholder="Имя Фамилия">
+            <span class="field-text">Пожалуйста, представьтесь</span>
+          </p>
+          <p class="field-group auth-form-email">
+            <label class="form-label" for="form-email" >Ваш e-mail:
+              <svg class="auth-form-icon" aria-hidden="true" focusable="false" width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.6 8C7.2 8 7 7.9 6.6 7.7L0 4V11C0 11.6 0.4 12 0.9 12H14.1C14.7 12 15 11.6 15 11V4L8.5 7.7C8.1 7.9 7.9 8 7.6 8ZM14.1 0H0.9C0.4 0 0 0.5 0 1V1.8L7.5 6L15 1.8V1C15 0.5 14.6 0 14.1 0Z"/>
+              </svg>
+              <span class="visually-hidden">E-mail</span>
+            </label>
+            <input class="field-form-text" type="email" name="email" id="form-email" placeholder="krasotka92@mail.ru" required>
+            <span class="field-text">Забавный у вас адрес</span>
+          </p>
+          <p class="field-group auth-form-order">
+            <label class="form-label" for="form-user-text">Что нужно привезти:</label>
+            <input class="field-form-text" type="text" name="delivery" id="form-user-text" placeholder="В свободной форме">
+          </p>
+          <p class="field-group auth-form-value">
+            <span class="form-label">
+              <label for="number-div">Количество:</label>
+            </span>
+            <span class="field-info-icon">
+              <button class="field" type="button" tabindex="-1">i
+                <span class="visually-hidden">Информация</span>
+              </button>
+              <span class="popover-modal field-popover">
+                    Постараемся найти, сколько нужно. Привезём сколько получится по требованиям<br>к провозу багажа.
+              </span>
+            </span>
+            <span class="field-num-col">
+              <button class="input-number-button button-minus" type="button">
+                <svg class="button-icon" aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 7H0v2h16V7Z"/>
                 </svg>
                 <span class="visually-hidden">Минус</span>
               </button>
-              <input class="auth-form-field field4" type="number" id="number-div" min="0" name="delivery" value="1">
-              <button class="number-plus" type="button">
-                <svg class="plus-svg" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g opacity="0.3">
-                  <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black"/>
-                  </g>
+              <button class="input-number-button button-plus" type="button">
+                <svg class="button-icon" aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7Z"/>
                 </svg>
-                <span class="visually-hidden">Плюс</span>  
+                <span class="visually-hidden">Плюс</span>
               </button>
-            </p>
-
-            <button class="button-feedback auth-form-button" type="submit">Отправить</button>
-          </form>
-
-          <div class="field-info-icon">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</div>
-        </section>
-      </div>s
+              <input class="field-form-text" type="number" name="delivery" id="number-div" min="1" value="1" required>
+            </span>
+          </p>
+          <button class="auth-form-button button-feedback" type="submit">Отправить</button>
+        </form>
+      </div>
     </div>
 
   </body>
